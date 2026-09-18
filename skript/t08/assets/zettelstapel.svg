@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 620" role="img" aria-labelledby="zs-t zs-d">
+  <title id="zs-t">Zettelstapel: vier Zettel übereinander, für jeden Aufruf einer – nur der oberste rechnet</title>
+  <desc id="zs-d">Vier Zettel liegen übereinander. Von unten nach oben: fakultaet von 4 wartet auf 4 mal fakultaet von 3, fakultaet von 3 wartet auf 3 mal fakultaet von 2, fakultaet von 2 wartet auf 2 mal fakultaet von 1. Der oberste Zettel fakultaet von 1 ist gelb markiert und aktiv: der Basisfall rechnet. Links zeigt ein Pfeil abwärts für den Aufruf, der einen Zettel auflegt, rechts ein Pfeil aufwärts für das return, das ihn wieder herunternimmt.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .zs-h { font-size: 26px; font-weight: 700; }
+    .zs-l { font-size: 22px; }
+    .zs-s { font-size: 19px; fill: #5a6472; }
+    .zs-card { fill: #f5f3ee; stroke: #c7cdd4; stroke-width: 2.5; }
+  </style>
+  <defs>
+    <marker id="zs-ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a2f6e"/></marker>
+    <marker id="zs-auf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a5f00"/></marker>
+  </defs>
+  <rect width="1260" height="620" fill="#ffffff"/>
+
+  <!-- Stapel, von unten nach oben gezeichnet -->
+  <rect class="zs-card" x="350" y="452" width="560" height="120" rx="8"/>
+  <text class="zs-h" x="382" y="490">fakultaet(4)</text>
+  <text class="zs-l" x="600" y="490">wartet auf:  4 · fakultaet(3)</text>
+
+  <rect class="zs-card" x="350" y="348" width="560" height="120" rx="8"/>
+  <text class="zs-h" x="382" y="386">fakultaet(3)</text>
+  <text class="zs-l" x="600" y="386">wartet auf:  3 · fakultaet(2)</text>
+
+  <rect class="zs-card" x="350" y="244" width="560" height="120" rx="8"/>
+  <text class="zs-h" x="382" y="282">fakultaet(2)</text>
+  <text class="zs-l" x="600" y="282">wartet auf:  2 · fakultaet(1)</text>
+
+  <rect x="350" y="110" width="560" height="130" rx="8" fill="#fcd430" stroke="#8a5f00" stroke-width="3"/>
+  <text class="zs-h" x="382" y="152">fakultaet(1)</text>
+  <text class="zs-l" x="600" y="152">Basisfall – rechnet: 1</text>
+  <text class="zs-l" x="382" y="212" style="font-weight:700">aktiv</text>
+
+  <!-- Pfeile links: Aufruf legt auf -->
+  <line x1="240" y1="140" x2="240" y2="470" stroke="#1a2f6e" stroke-width="4" marker-start="url(#zs-ab)"/>
+  <text class="zs-s" x="70" y="290">Jeder Aufruf</text>
+  <text class="zs-s" x="70" y="318">legt einen</text>
+  <text class="zs-s" x="70" y="346">Zettel obenauf</text>
+
+  <!-- Pfeile rechts: return nimmt runter -->
+  <line x1="1020" y1="470" x2="1020" y2="140" stroke="#8a5f00" stroke-width="4" marker-end="url(#zs-auf)"/>
+  <text class="zs-s" x="1050" y="290">Jedes return</text>
+  <text class="zs-s" x="1050" y="318">nimmt ihn</text>
+  <text class="zs-s" x="1050" y="346">wieder herunter</text>
+
+  <text class="zs-l" x="630" y="606" text-anchor="middle" style="font-weight:700">Nur der oberste Zettel rechnet.</text>
+</svg>

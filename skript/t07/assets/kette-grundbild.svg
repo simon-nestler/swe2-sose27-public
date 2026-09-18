@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="t d">
+  <title id="t">Grundbild der verketteten Liste: head-Zettel, drei Knoten Dom, Hafen, Park, Ende als null</title>
+  <desc id="d">Drei zweigeteilte Kästen nebeneinander. Oben steht jeweils der Wert Dom, Hafen, Park, unten das Feld next mit einem Pfeil auf den rechten Nachbarkasten. Links ein einzelner Zettel head mit Pfeil auf Dom. Der next-Zettel von Park trägt statt eines Pfeils das Wort null.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .wert { font-size: 30px; font-weight: 700; text-anchor: middle; }
+    .feld { font-size: 16px; fill: #5a6472; }
+    .zettel { font-size: 24px; font-weight: 700; text-anchor: middle; }
+    .nullw { font-size: 24px; font-weight: 700; fill: #5a6472; text-anchor: middle; }
+    .box { fill: #ffffff; stroke: #5a6472; stroke-width: 2; }
+    .kopf { fill: #e5effb; stroke: #5a6472; stroke-width: 2; }
+    .pfeil { fill: none; stroke: #3391ff; stroke-width: 3.5; marker-end: url(#pf); }
+  </style>
+  <defs>
+    <marker id="pf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+  </defs>
+  <rect width="1200" height="360" fill="#ffffff"/>
+
+  <!-- head-Zettel -->
+  <rect class="box" x="50" y="150" width="120" height="60" rx="6"/>
+  <text class="zettel" x="110" y="188">head</text>
+  <path class="pfeil" d="M170,180 L258,180"/>
+
+  <!-- Knoten Dom -->
+  <rect class="kopf" x="260" y="120" width="200" height="66"/>
+  <rect class="box" x="260" y="186" width="200" height="54"/>
+  <text class="feld" x="270" y="140">wert</text>
+  <text class="wert" x="360" y="166">Dom</text>
+  <text class="feld" x="270" y="204">next</text>
+  <path class="pfeil" d="M420,213 L608,213"/>
+
+  <!-- Knoten Hafen -->
+  <rect class="kopf" x="610" y="120" width="200" height="66"/>
+  <rect class="box" x="610" y="186" width="200" height="54"/>
+  <text class="feld" x="620" y="140">wert</text>
+  <text class="wert" x="710" y="166">Hafen</text>
+  <text class="feld" x="620" y="204">next</text>
+  <path class="pfeil" d="M770,213 L958,213"/>
+
+  <!-- Knoten Park -->
+  <rect class="kopf" x="960" y="120" width="200" height="66"/>
+  <rect class="box" x="960" y="186" width="200" height="54"/>
+  <text class="feld" x="970" y="140">wert</text>
+  <text class="wert" x="1060" y="166">Park</text>
+  <text class="feld" x="970" y="204">next</text>
+  <text class="nullw" x="1075" y="221">null</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Skizze 2: Klassendiagramm – konkrete Klasse Medium mit titel und anzeigen(), daneben gestrichelt das Interface Abspielbar mit abspielen(); Video hängt an beiden, Foto nur an Medium</title>
+  <desc id="d">Links oben die konkrete Klasse Medium mit dem Feld titel und der Methode anzeigen(). Rechts oben, gestrichelt umrandet, das Interface Abspielbar mit der Methode abspielen(). Unten Foto und Video: Foto erbt nur von Medium, Video erbt von Medium und erfüllt zusätzlich mit gestricheltem Pfeil das Interface Abspielbar.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .name { font-size: 28px; font-weight: 700; text-anchor: middle; }
+    .stereo { font-size: 22px; fill: #5a6472; text-anchor: middle; }
+    .member { font-size: 24px; }
+    .box { fill: #ffffff; stroke: #1a2f6e; stroke-width: 3; }
+    .ibox { fill: #ffffff; stroke: #1a2f6e; stroke-width: 3; stroke-dasharray: 10 7; }
+    .sep { stroke: #1a2f6e; stroke-width: 2; }
+    .erbt { stroke: #1a2f6e; stroke-width: 3; fill: none; }
+    .erfuellt { stroke: #1a2f6e; stroke-width: 3; fill: none; stroke-dasharray: 10 7; }
+    .dreieck { fill: #ffffff; stroke: #1a2f6e; stroke-width: 3; }
+  </style>
+  <rect width="1200" height="620" fill="#ffffff"/>
+
+  <!-- Medium (konkret, schlank) -->
+  <g>
+    <rect class="box" x="160" y="60" width="320" height="150"/>
+    <text class="name" x="320" y="100">Medium</text>
+    <line class="sep" x1="160" y1="115" x2="480" y2="115"/>
+    <text class="member" x="180" y="150">titel</text>
+    <line class="sep" x1="160" y1="165" x2="480" y2="165"/>
+    <text class="member" x="180" y="198">anzeigen()</text>
+  </g>
+
+  <!-- Interface Abspielbar -->
+  <g>
+    <rect class="ibox" x="740" y="60" width="320" height="150"/>
+    <text class="stereo" x="900" y="98">«interface»</text>
+    <text class="name" x="900" y="132">Abspielbar</text>
+    <line class="sep" x1="740" y1="150" x2="1060" y2="150"/>
+    <text class="member" x="760" y="188">abspielen()</text>
+  </g>
+
+  <!-- Foto erbt von Medium -->
+  <path class="erbt" d="M 240 470 L 240 350 L 300 350 L 300 238"/>
+  <polygon class="dreieck" points="300,210 285,238 315,238"/>
+
+  <!-- Video erbt von Medium -->
+  <path class="erbt" d="M 610 470 L 610 350 L 340 350 L 340 238"/>
+  <polygon class="dreieck" points="340,210 325,238 355,238"/>
+
+  <!-- Video erfüllt Abspielbar -->
+  <path class="erfuellt" d="M 700 470 L 700 380 L 900 380 L 900 238"/>
+  <polygon class="dreieck" points="900,210 885,238 915,238"/>
+
+  <!-- Foto -->
+  <g>
+    <rect class="box" x="120" y="470" width="260" height="90"/>
+    <text class="name" x="250" y="510">Foto</text>
+    <line class="sep" x1="120" y1="525" x2="380" y2="525"/>
+  </g>
+
+  <!-- Video -->
+  <g>
+    <rect class="box" x="520" y="470" width="260" height="90"/>
+    <text class="name" x="650" y="510">Video</text>
+    <line class="sep" x1="520" y1="525" x2="780" y2="525"/>
+  </g>
+</svg>

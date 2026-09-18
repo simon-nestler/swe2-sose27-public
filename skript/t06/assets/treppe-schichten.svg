@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 640" role="img" aria-labelledby="t d">
+  <title id="t">Schema: Die Schichten als Treppe – Datei, Lader, Galerie-Logik, Oberfläche, Mensch; die Exception steigt hinauf, erst die Oberfläche kann reagieren</title>
+  <desc id="d">Eine Treppe mit fünf Stufen von links unten nach rechts oben: Datei, Lader, Galerie-Logik, Oberfläche, Mensch. Eine gestrichelte Linie steigt die Stufen hinauf. Bei Lader und Galerie-Logik steht die Frage Kann ich reagieren mit einem Kreuz, bei der Oberfläche mit einem gelb markierten Häkchen. Auf der obersten Stufe steht eine Person.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 22px; font-weight: 700; }
+    .s { font-size: 18px; fill: #5a6472; }
+    .q { font-size: 19px; fill: #1a2f6e; font-weight: 600; }
+    .stufe { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .weg { fill: none; stroke: #3391ff; stroke-width: 4; stroke-dasharray: 9 7; marker-end: url(#pfeil); }
+    .nein { stroke: #5a6472; stroke-width: 4; }
+    .ja { stroke: #031121; stroke-width: 5; fill: none; }
+  </style>
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+  </defs>
+  <rect width="1240" height="640" fill="#ffffff"/>
+
+  <!-- Stufen -->
+  <rect class="stufe" x="60"  y="500" width="230" height="90"/>
+  <text class="h" x="86" y="540">Datei</text>
+  <text class="s" x="86" y="568">fehlt einfach</text>
+
+  <rect class="stufe" x="290" y="400" width="230" height="190"/>
+  <text class="h" x="316" y="440">Lader</text>
+  <text class="s" x="316" y="468">kennt nur Bytes</text>
+
+  <rect class="stufe" x="520" y="300" width="230" height="290"/>
+  <text class="h" x="546" y="340">Galerie-Logik</text>
+  <text class="s" x="546" y="368">kennt kein Fenster</text>
+
+  <rect class="stufe" x="750" y="200" width="230" height="390"/>
+  <text class="h" x="776" y="240">Oberfläche</text>
+  <text class="s" x="776" y="268">sieht den Menschen</text>
+
+  <rect class="stufe" x="980" y="100" width="200" height="490"/>
+  <text class="h" x="1006" y="140">Mensch</text>
+  <!-- Person auf der obersten Stufe -->
+  <circle cx="1080" cy="212" r="26" fill="#ffffff" stroke="#031121" stroke-width="3"/>
+  <path d="M1038,296 C1038,252 1122,252 1122,296" fill="#ffffff" stroke="#031121" stroke-width="3"/>
+
+  <!-- Fragen an den Stufen -->
+  <text class="q" x="300" y="640">Kann ich reagieren?</text>
+  <line class="nein" x1="330" y1="500" x2="358" y2="528"/>
+  <line class="nein" x1="358" y1="500" x2="330" y2="528"/>
+
+  <text class="q" x="540" y="640">Kann ich reagieren?</text>
+  <line class="nein" x1="560" y1="400" x2="588" y2="428"/>
+  <line class="nein" x1="588" y1="400" x2="560" y2="428"/>
+
+  <text class="q" x="774" y="640">Kann ich reagieren?</text>
+  <circle cx="800" cy="318" r="30" fill="#fcd430"/>
+  <path class="ja" d="M786,318 L797,330 L816,306"/>
+
+  <!-- Aufstieg der Exception -->
+  <path class="weg" d="M120,494 L340,494 L340,394 L570,394 L570,294 L800,294 L800,194 L1010,194"/>
+  <text class="s" x="66" y="470">die Exception steigt</text>
+</svg>

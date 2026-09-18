@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Der Wächterknoten: ein Knoten ohne Daten vor dem ersten Element – und die leere Liste als Kette mit einem Knoten</title>
+  <desc id="d">Oben die Kette mit einem zusätzlichen grauen Kasten wächter, dessen Wert null ist und dessen next-Pfeil auf Dom zeigt; der head-Zettel ist durchgestrichen. Darunter die leere Liste: nur der Wächterkasten, sein next ist null.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .wert { font-size: 24px; font-weight: 700; text-anchor: middle; }
+    .wertg { font-size: 22px; font-weight: 700; fill: #5a6472; text-anchor: middle; }
+    .feld { font-size: 14px; fill: #5a6472; }
+    .zettel { font-size: 19px; font-weight: 700; text-anchor: middle; }
+    .nullw { font-size: 19px; font-weight: 700; fill: #5a6472; text-anchor: middle; }
+    .cap { font-size: 21px; font-weight: 700; }
+    .lbl { font-size: 17px; fill: #5a6472; text-anchor: middle; }
+    .box { fill: #ffffff; stroke: #5a6472; stroke-width: 2; }
+    .kopf { fill: #e5effb; stroke: #5a6472; stroke-width: 2; }
+    .grau { fill: #eceff2; stroke: #5a6472; stroke-width: 2; }
+    .pfeil { fill: none; stroke: #3391ff; stroke-width: 3; marker-end: url(#pf6); }
+    .strich { stroke: #5a6472; stroke-width: 2.5; }
+  </style>
+  <defs>
+    <marker id="pf6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+  </defs>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <text class="cap" x="40" y="45">Die Kette mit Wächter</text>
+
+  <!-- gestrichener head-Zettel -->
+  <rect class="box" x="30" y="130" width="94" height="48" rx="5"/>
+  <text class="zettel" x="77" y="161">head</text>
+  <line class="strich" x1="26" y1="182" x2="128" y2="126"/>
+
+  <!-- wächter -->
+  <rect class="grau" x="160" y="90" width="180" height="56"/>
+  <rect class="grau" x="160" y="146" width="180" height="44"/>
+  <text class="lbl" x="250" y="80">wächter</text>
+  <text class="wertg" x="250" y="127">wert = null</text>
+  <text class="feld" x="170" y="161">next</text>
+  <path class="pfeil" d="M340,168 L428,168"/>
+
+  <!-- Dom -->
+  <rect class="kopf" x="430" y="90" width="180" height="56"/>
+  <rect class="box" x="430" y="146" width="180" height="44"/>
+  <text class="wert" x="520" y="127">Dom</text>
+  <text class="feld" x="440" y="161">next</text>
+  <path class="pfeil" d="M610,168 L698,168"/>
+
+  <!-- Hafen -->
+  <rect class="kopf" x="700" y="90" width="180" height="56"/>
+  <rect class="box" x="700" y="146" width="180" height="44"/>
+  <text class="wert" x="790" y="127">Hafen</text>
+  <text class="feld" x="710" y="161">next</text>
+  <path class="pfeil" d="M880,168 L968,168"/>
+
+  <!-- Park -->
+  <rect class="kopf" x="970" y="90" width="180" height="56"/>
+  <rect class="box" x="970" y="146" width="180" height="44"/>
+  <text class="wert" x="1060" y="127">Park</text>
+  <text class="feld" x="980" y="161">next</text>
+  <text class="nullw" x="1070" y="177">null</text>
+
+  <text class="cap" x="40" y="340">Die leere Liste: eine Kette mit einem Knoten</text>
+
+  <!-- wächter allein -->
+  <rect class="grau" x="160" y="390" width="180" height="56"/>
+  <rect class="grau" x="160" y="446" width="180" height="44"/>
+  <text class="lbl" x="250" y="380">wächter</text>
+  <text class="wertg" x="250" y="427">wert = null</text>
+  <text class="feld" x="170" y="461">next</text>
+  <text class="nullw" x="260" y="477">null</text>
+</svg>

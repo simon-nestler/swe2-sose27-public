@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 440" role="img" aria-labelledby="t d">
+  <title id="t">Löschen mittendrin: vor.next wird an Hafen vorbei auf Park umgehängt, Hafen bleibt ohne eingehenden Pfeil stehen</title>
+  <desc id="d">Kette Zoo, Dom, Hafen, Park, Ende null. Darunter ein Zettel vor mit Pfeil auf Dom. Der next-Zettel von Dom wird umgehängt: Der alte Pfeil auf Hafen ist gestrichelt durchgestrichen, ein neuer dicker Pfeil führt an Hafen vorbei auf Park. Hafen ist grau hinterlegt, kein Pfeil zeigt mehr auf ihn.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .wert { font-size: 28px; font-weight: 700; text-anchor: middle; }
+    .wertg { font-size: 28px; font-weight: 700; fill: #5a6472; text-anchor: middle; }
+    .feld { font-size: 15px; fill: #5a6472; }
+    .zettel { font-size: 22px; font-weight: 700; text-anchor: middle; }
+    .nullw { font-size: 22px; font-weight: 700; fill: #5a6472; text-anchor: middle; }
+    .box { fill: #ffffff; stroke: #5a6472; stroke-width: 2; }
+    .kopf { fill: #e5effb; stroke: #5a6472; stroke-width: 2; }
+    .grau { fill: #eceff2; stroke: #c7cdd4; stroke-width: 2; }
+    .pfeil { fill: none; stroke: #5a6472; stroke-width: 2.5; marker-end: url(#pn2); }
+    .neu { fill: none; stroke: #3391ff; stroke-width: 5.5; marker-end: url(#pb2); }
+    .alt { fill: none; stroke: #c7cdd4; stroke-width: 2.5; stroke-dasharray: 8 6; marker-end: url(#pa2); }
+    .altg { fill: none; stroke: #c7cdd4; stroke-width: 2.5; marker-end: url(#pa2); }
+    .strich { stroke: #5a6472; stroke-width: 2.5; }
+  </style>
+  <defs>
+    <marker id="pn2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5a6472"/></marker>
+    <marker id="pb2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+    <marker id="pa2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c7cdd4"/></marker>
+  </defs>
+  <rect width="1200" height="440" fill="#ffffff"/>
+
+  <!-- Zoo -->
+  <rect class="kopf" x="80" y="80" width="180" height="58"/>
+  <rect class="box" x="80" y="138" width="180" height="46"/>
+  <text class="wert" x="170" y="120">Zoo</text>
+  <text class="feld" x="90" y="154">next</text>
+  <path class="pfeil" d="M260,161 L358,161"/>
+
+  <!-- Dom -->
+  <rect class="kopf" x="360" y="80" width="180" height="58"/>
+  <rect class="box" x="360" y="138" width="180" height="46"/>
+  <text class="wert" x="450" y="120">Dom</text>
+  <text class="feld" x="370" y="154">next</text>
+  <!-- alter Pfeil Dom -> Hafen, gestrichelt und durchgestrichen -->
+  <path class="alt" d="M540,150 L638,150"/>
+  <line class="strich" x1="575" y1="132" x2="603" y2="168"/>
+  <!-- neuer dicker Pfeil Dom -> Park, an Hafen vorbei -->
+  <path class="neu" d="M540,172 C640,300 830,300 928,190"/>
+
+  <!-- Hafen, grau hinterlegt -->
+  <rect class="grau" x="640" y="80" width="180" height="58"/>
+  <rect class="grau" x="640" y="138" width="180" height="46"/>
+  <text class="wertg" x="730" y="120">Hafen</text>
+  <text class="feld" x="650" y="154">next</text>
+  <path class="altg" d="M820,161 L918,161"/>
+
+  <!-- Park -->
+  <rect class="kopf" x="920" y="80" width="180" height="58"/>
+  <rect class="box" x="920" y="138" width="180" height="46"/>
+  <text class="wert" x="1010" y="120">Park</text>
+  <text class="feld" x="930" y="154">next</text>
+  <text class="nullw" x="1020" y="170">null</text>
+
+  <!-- vor-Zettel -->
+  <rect class="box" x="405" y="330" width="90" height="50" rx="5"/>
+  <text class="zettel" x="450" y="362">vor</text>
+  <path class="pfeil" d="M450,330 L450,188"/>
+</svg>

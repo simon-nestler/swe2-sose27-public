@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 640" role="img" aria-labelledby="t d">
+  <title id="t">Die Exception-Hierarchie: Throwable, darunter Exception; links die checked Seite mit IOException und FileNotFoundException, rechts die unchecked Seite mit RuntimeException und ihren Unterklassen</title>
+  <desc id="d">Klassenbaum. Throwable oben, darunter Exception. Links erbt IOException von Exception und FileNotFoundException von IOException, diese Seite ist checked. Rechts erbt RuntimeException von Exception, darunter NullPointerException, IllegalArgumentException und IllegalStateException, diese Seite ist unchecked. Eine gestrichelte Trennlinie läuft in der Mitte.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .m { font-size: 21px; font-family: ui-monospace, Menlo, Consolas, monospace; text-anchor: middle; }
+    .lbl { font-size: 20px; font-weight: 600; letter-spacing: 0.18em; fill: #5a6472; text-anchor: middle; }
+    .box { fill: #ffffff; stroke: #1a2f6e; stroke-width: 2; }
+    .base { fill: #e5effb; stroke: #1a2f6e; stroke-width: 2; }
+    .edge { fill: none; stroke: #5a6472; stroke-width: 2.5; }
+    .divider { stroke: #ebb52c; stroke-width: 3; stroke-dasharray: 4 8; }
+  </style>
+  <rect width="1240" height="640" fill="#ffffff"/>
+
+  <rect class="base" x="500" y="36" width="240" height="54"/>
+  <text class="m" x="620" y="70">Throwable</text>
+
+  <rect class="base" x="500" y="146" width="240" height="54"/>
+  <text class="m" x="620" y="180">Exception</text>
+
+  <path class="edge" d="M620,90 L620,146"/>
+
+  <!-- linke Seite: checked -->
+  <path class="edge" d="M620,200 L620,236 L300,236 L300,286"/>
+  <rect class="box" x="180" y="286" width="240" height="54"/>
+  <text class="m" x="300" y="320">IOException</text>
+
+  <path class="edge" d="M300,340 L300,392"/>
+  <rect class="box" x="140" y="392" width="320" height="54"/>
+  <text class="m" x="300" y="426">FileNotFoundException</text>
+
+  <rect x="240" y="560" width="120" height="8" fill="#fcd430"/>
+  <text class="lbl" x="300" y="548">CHECKED</text>
+
+  <!-- rechte Seite: unchecked -->
+  <path class="edge" d="M620,200 L620,236 L950,236 L950,286"/>
+  <rect class="box" x="810" y="286" width="280" height="54"/>
+  <text class="m" x="950" y="320">RuntimeException</text>
+
+  <path class="edge" d="M950,340 L950,564"/>
+  <rect class="box" x="800" y="366" width="300" height="50"/>
+  <text class="m" x="950" y="398">NullPointerException</text>
+  <rect class="box" x="790" y="440" width="320" height="50"/>
+  <text class="m" x="950" y="472">IllegalArgumentException</text>
+  <rect class="box" x="800" y="514" width="300" height="50"/>
+  <text class="m" x="950" y="546">IllegalStateException</text>
+
+  <rect x="890" y="614" width="120" height="8" fill="#fcd430"/>
+  <text class="lbl" x="950" y="602">UNCHECKED</text>
+
+  <!-- Trennlinie -->
+  <line class="divider" x1="620" y1="252" x2="620" y2="620"/>
+</svg>

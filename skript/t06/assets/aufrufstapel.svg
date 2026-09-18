@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-labelledby="t d">
+  <title id="t">Schema: Eine Exception ist ein Objekt, das den Aufrufstapel rückwärts hinaufklettert</title>
+  <desc id="d">Ein Turm aus drei Ebenen: Galerie.main ruft BildLader.laden, laden ruft den Konstruktor von FileInputStream. Unten scheitert der Konstruktor, ein Objekt FileNotFoundException mit Klasse, Nachricht und Stapel klettert rechts am Turm hinauf. Auf jeder Ebene steht die Frage: Fängst du? Niemand fängt, oben druckt die JVM den Stapel und beendet den Thread.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 22px; font-weight: 700; }
+    .m { font-size: 21px; font-family: ui-monospace, Menlo, Consolas, monospace; }
+    .s { font-size: 18px; fill: #5a6472; }
+    .q { font-size: 20px; font-weight: 700; fill: #1a2f6e; }
+    .frame { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .obj { fill: #fcd430; stroke: #031121; stroke-width: 2; }
+    .call { fill: none; stroke: #5a6472; stroke-width: 3; marker-end: url(#pfeil-grau); }
+    .up { fill: none; stroke: #3391ff; stroke-width: 4; stroke-dasharray: 9 7; marker-end: url(#pfeil-blau); }
+  </style>
+  <defs>
+    <marker id="pfeil-grau" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5a6472"/></marker>
+    <marker id="pfeil-blau" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+  </defs>
+  <rect width="1200" height="600" fill="#ffffff"/>
+
+  <!-- Turm: main oben, tiefster Aufruf unten -->
+  <rect class="frame" x="120" y="120" width="440" height="80"/>
+  <text class="m" x="150" y="155">Galerie.main</text>
+  <text class="s" x="150" y="184">kennt den Auftrag</text>
+
+  <rect class="frame" x="120" y="270" width="440" height="80"/>
+  <text class="m" x="150" y="305">BildLader.laden</text>
+  <text class="s" x="150" y="334">kennt nur Bytes</text>
+
+  <rect class="frame" x="120" y="420" width="440" height="80"/>
+  <text class="m" x="150" y="455">new FileInputStream(pfad)</text>
+  <text class="s" x="150" y="484">scheitert: Datei fehlt</text>
+
+  <!-- Aufrufe abwärts -->
+  <path class="call" d="M300,200 L300,266"/>
+  <text class="s" x="316" y="240">ruft</text>
+  <path class="call" d="M300,350 L300,416"/>
+  <text class="s" x="316" y="390">ruft</text>
+
+  <!-- Das Objekt -->
+  <rect class="obj" x="700" y="440" width="400" height="120" rx="10"/>
+  <text class="h" x="730" y="482">FileNotFoundException</text>
+  <text class="s" x="730" y="512" fill="#031121">Klasse · Nachricht (getMessage())</text>
+  <text class="s" x="730" y="538" fill="#031121">Aufrufstapel bei der Erzeugung</text>
+
+  <!-- Kletterweg nach oben -->
+  <path class="up" d="M700,470 C630,440 620,380 620,310 C620,220 620,160 620,90"/>
+  <text class="q" x="646" y="315">Fängst du?</text>
+  <text class="q" x="646" y="165">Fängst du?</text>
+  <text class="h" x="560" y="56">Niemand fängt: Die JVM druckt den Stapel, der Thread endet.</text>
+</svg>

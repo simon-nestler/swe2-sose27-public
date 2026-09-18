@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="t d">
+  <title id="t">Löschen des ersten Elements: Der head-Zettel wird von Insel auf Zoo umgehängt, der alte Pfeil ist gestrichelt</title>
+  <desc id="d">Kette Insel, Zoo, Dom, Ende null. Der head-Zettel zeigt mit einem dicken neuen Pfeil über Insel hinweg auf Zoo. Der alte Pfeil von head auf Insel ist gestrichelt durchgestrichen. Insel ist grau hinterlegt, kein Pfeil zeigt mehr auf sie.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .wert { font-size: 28px; font-weight: 700; text-anchor: middle; }
+    .wertg { font-size: 28px; font-weight: 700; fill: #5a6472; text-anchor: middle; }
+    .feld { font-size: 15px; fill: #5a6472; }
+    .zettel { font-size: 22px; font-weight: 700; text-anchor: middle; }
+    .nullw { font-size: 22px; font-weight: 700; fill: #5a6472; text-anchor: middle; }
+    .box { fill: #ffffff; stroke: #5a6472; stroke-width: 2; }
+    .kopf { fill: #e5effb; stroke: #5a6472; stroke-width: 2; }
+    .grau { fill: #eceff2; stroke: #c7cdd4; stroke-width: 2; }
+    .pfeil { fill: none; stroke: #5a6472; stroke-width: 2.5; marker-end: url(#pn4); }
+    .grauout { fill: none; stroke: #c7cdd4; stroke-width: 2.5; marker-end: url(#pa4); }
+    .neu { fill: none; stroke: #3391ff; stroke-width: 5.5; marker-end: url(#pb4); }
+    .alt { fill: none; stroke: #c7cdd4; stroke-width: 2.5; stroke-dasharray: 8 6; marker-end: url(#pa4); }
+    .strich { stroke: #5a6472; stroke-width: 2.5; }
+  </style>
+  <defs>
+    <marker id="pn4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5a6472"/></marker>
+    <marker id="pb4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+    <marker id="pa4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c7cdd4"/></marker>
+  </defs>
+  <rect width="1200" height="360" fill="#ffffff"/>
+
+  <!-- head-Zettel -->
+  <rect class="box" x="60" y="160" width="110" height="55" rx="5"/>
+  <text class="zettel" x="115" y="195">head</text>
+  <!-- alter Pfeil head -> Insel, gestrichelt und durchgestrichen -->
+  <path class="alt" d="M170,195 L268,195"/>
+  <line class="strich" x1="200" y1="177" x2="228" y2="213"/>
+  <!-- neuer dicker Pfeil head -> Zoo, über Insel hinweg -->
+  <path class="neu" d="M115,158 C230,40 500,40 635,128"/>
+
+  <!-- Insel, grau hinterlegt -->
+  <rect class="grau" x="270" y="130" width="180" height="58"/>
+  <rect class="grau" x="270" y="188" width="180" height="46"/>
+  <text class="wertg" x="360" y="170">Insel</text>
+  <text class="feld" x="280" y="204">next</text>
+  <path class="grauout" d="M450,211 L568,211"/>
+
+  <!-- Zoo -->
+  <rect class="kopf" x="570" y="130" width="180" height="58"/>
+  <rect class="box" x="570" y="188" width="180" height="46"/>
+  <text class="wert" x="660" y="170">Zoo</text>
+  <text class="feld" x="580" y="204">next</text>
+  <path class="pfeil" d="M750,211 L868,211"/>
+
+  <!-- Dom -->
+  <rect class="kopf" x="870" y="130" width="180" height="58"/>
+  <rect class="box" x="870" y="188" width="180" height="46"/>
+  <text class="wert" x="960" y="170">Dom</text>
+  <text class="feld" x="880" y="204">next</text>
+  <text class="nullw" x="970" y="220">null</text>
+</svg>

@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 480" role="img" aria-labelledby="t d">
+  <title id="t">Die drei Ränder der Kette: Dom ohne Vorgänger, Park ohne Nachfolger, die leere Liste ohne Objekt</title>
+  <desc id="d">Kette head, Dom, Hafen, Park, Ende null. Über Hafen steht: Normalfall, hat Vorgänger und Nachfolger. Über Dom ein markiertes Fragezeichen mit der Frage Vorgänger, über Park eines mit der Frage Nachfolger. Rechts daneben ein leerer head-Zettel mit dem Wert null und der Beschriftung kein Objekt.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .wert { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    .feld { font-size: 14px; fill: #5a6472; }
+    .zettel { font-size: 21px; font-weight: 700; text-anchor: middle; }
+    .nullw { font-size: 21px; font-weight: 700; fill: #5a6472; text-anchor: middle; }
+    .anno { font-size: 20px; font-weight: 700; text-anchor: middle; }
+    .annog { font-size: 19px; fill: #5a6472; text-anchor: middle; }
+    .badge { font-size: 24px; font-weight: 700; text-anchor: middle; }
+    .box { fill: #ffffff; stroke: #5a6472; stroke-width: 2; }
+    .kopf { fill: #e5effb; stroke: #5a6472; stroke-width: 2; }
+    .pfeil { fill: none; stroke: #3391ff; stroke-width: 3; marker-end: url(#pf5); }
+  </style>
+  <defs>
+    <marker id="pf5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+  </defs>
+  <rect width="1260" height="480" fill="#ffffff"/>
+
+  <!-- Annotation Normalfall über Hafen -->
+  <text class="annog" x="605" y="105">Normalfall:</text>
+  <text class="annog" x="605" y="132">hat Vorgänger und Nachfolger</text>
+
+  <!-- Fragezeichen über Dom -->
+  <circle cx="290" cy="90" r="22" fill="#fcd430"/><text class="badge" x="290" y="99">?</text>
+  <text class="anno" x="290" y="140">Vorgänger?</text>
+
+  <!-- Fragezeichen über Park -->
+  <circle cx="920" cy="90" r="22" fill="#fcd430"/><text class="badge" x="920" y="99">?</text>
+  <text class="anno" x="920" y="140">Nachfolger?</text>
+
+  <!-- head-Zettel -->
+  <rect class="box" x="40" y="240" width="100" height="52" rx="5"/>
+  <text class="zettel" x="90" y="273">head</text>
+  <path class="pfeil" d="M140,266 L198,266"/>
+
+  <!-- Dom -->
+  <rect class="kopf" x="200" y="200" width="180" height="58"/>
+  <rect class="box" x="200" y="258" width="180" height="46"/>
+  <text class="wert" x="290" y="240">Dom</text>
+  <text class="feld" x="210" y="274">next</text>
+  <path class="pfeil" d="M380,281 L513,281"/>
+
+  <!-- Hafen -->
+  <rect class="kopf" x="515" y="200" width="180" height="58"/>
+  <rect class="box" x="515" y="258" width="180" height="46"/>
+  <text class="wert" x="605" y="240">Hafen</text>
+  <text class="feld" x="525" y="274">next</text>
+  <path class="pfeil" d="M695,281 L828,281"/>
+
+  <!-- Park -->
+  <rect class="kopf" x="830" y="200" width="180" height="58"/>
+  <rect class="box" x="830" y="258" width="180" height="46"/>
+  <text class="wert" x="920" y="240">Park</text>
+  <text class="feld" x="840" y="274">next</text>
+  <text class="nullw" x="930" y="290">null</text>
+
+  <!-- Leere Liste rechts -->
+  <line x1="1060" y1="180" x2="1060" y2="330" stroke="#c7cdd4" stroke-width="2"/>
+  <rect class="box" x="1090" y="240" width="130" height="52" rx="5"/>
+  <text class="zettel" x="1130" y="273">head</text>
+  <text class="nullw" x="1192" y="273">null</text>
+  <text class="annog" x="1155" y="330">kein Objekt</text>
+</svg>

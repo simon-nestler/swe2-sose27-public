@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Zeitdiagramm: ein 40-Sekunden-Balken „Handler: Export" auf dem JavaFX Application Thread, darunter eingehende Ereignisse, die sich vor dem Balkenende stauen</title>
+  <desc id="d">Eine Zeitachse von 0 bis 40 Sekunden. Der einzige Thread trägt einen durchgehenden Balken „Handler: Export – 40 Sekunden". Eingehende Ereignisse – Klick auf Abbrechen, Fenster verschieben, fällige Pulses – laufen als Pfeile auf die Warteschlange vor dem Balkenende zu und stauen sich dort als gelbe Kästchen. Erst nach dem Balkenende werden sie abgearbeitet.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .lane { font-size: 24px; font-weight: 700; }
+    .balken { font-size: 23px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .ev { font-size: 19px; fill: #5a6472; text-anchor: middle; }
+    .q { font-size: 19px; fill: #5a6472; text-anchor: end; }
+    .achse { font-size: 19px; fill: #5a6472; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="pfeil2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5a6472"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <!-- Lane -->
+  <text class="lane" x="140" y="140">JavaFX Application Thread</text>
+  <rect x="140" y="160" width="909" height="64" fill="#1a2f6e"/>
+  <text class="balken" x="594" y="200">Handler: Export – 40 Sekunden</text>
+
+  <!-- nach dem Auftauen: die gestauten Ereignisse feuern nach -->
+  <rect x="1057" y="160" width="12" height="64" fill="#1a2f6e" opacity="0.75"/>
+  <rect x="1077" y="160" width="12" height="64" fill="#1a2f6e" opacity="0.6"/>
+  <rect x="1097" y="160" width="12" height="64" fill="#1a2f6e" opacity="0.45"/>
+
+  <!-- Warteschlange vor dem Balkenende -->
+  <text class="q" x="1044" y="252">Warteschlange – nichts geht verloren</text>
+  <g fill="#fcd430" stroke="#031121" stroke-width="1">
+    <rect x="950" y="262" width="20" height="20"/>
+    <rect x="975" y="262" width="20" height="20"/>
+    <rect x="1000" y="262" width="20" height="20"/>
+    <rect x="1025" y="262" width="20" height="20"/>
+  </g>
+
+  <!-- eingehende Ereignisse -->
+  <g fill="none" stroke="#5a6472" stroke-width="2.5" stroke-dasharray="7 6" marker-end="url(#pfeil2)">
+    <line x1="254" y1="400" x2="950" y2="292"/>
+    <line x1="412" y1="435" x2="977" y2="292"/>
+    <line x1="594" y1="400" x2="1004" y2="292"/>
+    <line x1="775" y1="435" x2="1024" y2="292"/>
+    <line x1="889" y1="400" x2="1040" y2="292"/>
+  </g>
+  <text class="ev" x="254" y="428">Klick „Abbrechen"</text>
+  <text class="ev" x="412" y="463">Fenster verschieben</text>
+  <text class="ev" x="594" y="428">Klick „Abbrechen"</text>
+  <text class="ev" x="775" y="463">Pulse fällig</text>
+  <text class="ev" x="889" y="428">Klick</text>
+
+  <!-- Zeitachse -->
+  <line x1="140" y1="500" x2="1140" y2="500" stroke="#c7cdd4" stroke-width="2"/>
+  <g stroke="#c7cdd4" stroke-width="2">
+    <line x1="140" y1="494" x2="140" y2="506"/>
+    <line x1="367" y1="494" x2="367" y2="506"/>
+    <line x1="594" y1="494" x2="594" y2="506"/>
+    <line x1="821" y1="494" x2="821" y2="506"/>
+    <line x1="1049" y1="494" x2="1049" y2="506"/>
+  </g>
+  <text class="achse" x="140" y="532">0 s</text>
+  <text class="achse" x="367" y="532">10 s</text>
+  <text class="achse" x="594" y="532">20 s</text>
+  <text class="achse" x="821" y="532">30 s</text>
+  <text class="achse" x="1049" y="532">40 s</text>
+</svg>

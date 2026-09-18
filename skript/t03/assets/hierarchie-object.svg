@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" role="img" aria-labelledby="t d">
+  <title id="t">Die Hierarchie mit Object an der Spitze: über Control, Button und IconButton steht java.lang.Object – jede Klasse ohne extends erbt automatisch von Object</title>
+  <desc id="d">Vier Kästen übereinander. Ganz oben Object, dunkel hervorgehoben, mit den Methoden toString, equals und hashCode. Darunter Control, Button, IconButton wie im Klassendiagramm zuvor. Der Pfeil von Control zu Object trägt die Beschriftung: ohne extends, automatisch.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .n { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    .nw { font-size: 26px; font-weight: 700; text-anchor: middle; fill: #ffffff; }
+    .p { font-size: 18px; text-anchor: middle; fill: #c7cdd4; }
+    .m { font-size: 20px; text-anchor: middle; }
+    .s { font-size: 18px; fill: #5a6472; }
+    .name { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .meth { fill: #ffffff; stroke: #c7cdd4; stroke-width: 2; }
+    .dark { fill: #031121; }
+    .edge { stroke: #1a2f6e; stroke-width: 3; fill: none; }
+    .tri { fill: #ffffff; stroke: #1a2f6e; stroke-width: 3; }
+    .akzent { fill: #fcd430; }
+  </style>
+  <rect width="1200" height="640" fill="#ffffff"/>
+
+  <!-- Object -->
+  <rect class="dark" x="400" y="40" width="400" height="52"/>
+  <text class="nw" x="600" y="70">Object</text>
+  <text class="p" x="600" y="87">java.lang – von niemandem im Projekt geschrieben</text>
+  <rect class="meth" x="400" y="92" width="400" height="48"/>
+  <text class="m" x="600" y="122">toString() · equals(Object) · hashCode() · …</text>
+  <rect class="akzent" x="400" y="140" width="400" height="4"/>
+
+  <!-- Pfeil Control -> Object -->
+  <line class="edge" x1="600" y1="200" x2="600" y2="166"/>
+  <polygon class="tri" points="600,144 584,166 616,166"/>
+  <text class="s" x="640" y="184">ohne extends: automatisch</text>
+
+  <!-- Control -->
+  <rect class="name" x="440" y="200" width="320" height="48"/>
+  <text class="n" x="600" y="232">Control</text>
+  <rect class="meth" x="440" y="248" width="320" height="44"/>
+  <text class="m" x="600" y="276">render()</text>
+
+  <!-- Pfeil Button -> Control -->
+  <line class="edge" x1="600" y1="340" x2="600" y2="314"/>
+  <polygon class="tri" points="600,292 584,314 616,314"/>
+
+  <!-- Button -->
+  <rect class="name" x="440" y="340" width="320" height="48"/>
+  <text class="n" x="600" y="372">Button</text>
+  <rect class="meth" x="440" y="388" width="320" height="44"/>
+  <text class="m" x="600" y="416">render()</text>
+
+  <!-- Pfeil IconButton -> Button -->
+  <line class="edge" x1="600" y1="480" x2="600" y2="454"/>
+  <polygon class="tri" points="600,432 584,454 616,454"/>
+
+  <!-- IconButton -->
+  <rect class="name" x="440" y="480" width="320" height="48"/>
+  <text class="n" x="600" y="512">IconButton</text>
+  <rect class="meth" x="440" y="528" width="320" height="44"/>
+  <text class="m" x="600" y="556">render()</text>
+
+  <!-- Legende -->
+  <polygon class="tri" points="72,598 60,618 84,618"/>
+  <text class="s" x="100" y="614">erbt von – der Pfeil zeigt zur Oberklasse</text>
+  <rect class="akzent" x="560" y="606" width="26" height="8"/>
+  <text class="s" x="600" y="614">geerbt aus Object, ohne eine Zeile eigenen Code</text>
+</svg>

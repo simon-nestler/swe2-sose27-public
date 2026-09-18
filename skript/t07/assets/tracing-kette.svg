@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" role="img" aria-labelledby="t d">
+  <title id="t">Ausgangskette des Tracing-Blatts: head, dann Dom, Hafen, Park, Turm, Ende null</title>
+  <desc id="d">Ein Zettel head zeigt auf den ersten von vier zweigeteilten Kästen Dom, Hafen, Park, Turm. Jeder next-Zettel zeigt auf den rechten Nachbarn, der next-Zettel von Turm trägt das Wort null.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .wert { font-size: 26px; font-weight: 700; text-anchor: middle; }
+    .feld { font-size: 14px; fill: #5a6472; }
+    .zettel { font-size: 21px; font-weight: 700; text-anchor: middle; }
+    .nullw { font-size: 21px; font-weight: 700; fill: #5a6472; text-anchor: middle; }
+    .box { fill: #ffffff; stroke: #5a6472; stroke-width: 2; }
+    .kopf { fill: #e5effb; stroke: #5a6472; stroke-width: 2; }
+    .pfeil { fill: none; stroke: #3391ff; stroke-width: 3; marker-end: url(#pf3); }
+  </style>
+  <defs>
+    <marker id="pf3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+  </defs>
+  <rect width="1200" height="260" fill="#ffffff"/>
+
+  <!-- head-Zettel -->
+  <rect class="box" x="40" y="105" width="100" height="52" rx="5"/>
+  <text class="zettel" x="90" y="138">head</text>
+  <path class="pfeil" d="M140,131 L198,131"/>
+
+  <!-- Dom -->
+  <rect class="kopf" x="200" y="70" width="170" height="56"/>
+  <rect class="box" x="200" y="126" width="170" height="44"/>
+  <text class="wert" x="285" y="108">Dom</text>
+  <text class="feld" x="208" y="141">next</text>
+  <path class="pfeil" d="M370,148 L458,148"/>
+
+  <!-- Hafen -->
+  <rect class="kopf" x="460" y="70" width="170" height="56"/>
+  <rect class="box" x="460" y="126" width="170" height="44"/>
+  <text class="wert" x="545" y="108">Hafen</text>
+  <text class="feld" x="468" y="141">next</text>
+  <path class="pfeil" d="M630,148 L718,148"/>
+
+  <!-- Park -->
+  <rect class="kopf" x="720" y="70" width="170" height="56"/>
+  <rect class="box" x="720" y="126" width="170" height="44"/>
+  <text class="wert" x="805" y="108">Park</text>
+  <text class="feld" x="728" y="141">next</text>
+  <path class="pfeil" d="M890,148 L978,148"/>
+
+  <!-- Turm -->
+  <rect class="kopf" x="980" y="70" width="170" height="56"/>
+  <rect class="box" x="980" y="126" width="170" height="44"/>
+  <text class="wert" x="1065" y="108">Turm</text>
+  <text class="feld" x="988" y="141">next</text>
+  <text class="nullw" x="1075" y="156">null</text>
+</svg>

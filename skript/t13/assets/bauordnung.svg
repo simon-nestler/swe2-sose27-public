@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 400" role="img" aria-labelledby="t d">
+  <title id="t">Die Bauordnung: vier Etappen als Pfeilkette von Modell über Datenhaltung und Oberfläche zur Robustheit; die vierte Etappe ist ausgegraut und trägt den Vermerk Teil B</title>
+  <desc id="d">Vier Kästen mit Pfeilen dazwischen. Etappe 1 Modell (T01 bis T05), Etappe 2 Datenhaltung (T07 bis T09), Etappe 3 Oberfläche und Ereignisse (T10), Etappe 4 Robustheit (T06 und T11). Die vierte Etappe ist grau und trägt einen gelben Vermerk Teil B. Unter jedem Kasten steht die Leitfrage der Etappe.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .num { font-size: 18px; font-weight: 700; fill: #b9c6ee; }
+    .et  { font-size: 26px; font-weight: 700; fill: #ffffff; }
+    .th  { font-size: 19px; fill: #cdd6f0; }
+    .numg { font-size: 18px; font-weight: 700; fill: #8d97a3; }
+    .etg  { font-size: 26px; font-weight: 700; fill: #5a6472; }
+    .thg  { font-size: 19px; fill: #8d97a3; }
+    .lf  { font-size: 18px; fill: #5a6472; }
+    .badge { font-size: 18px; font-weight: 700; fill: #031121; }
+  </style>
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#031121"/></marker>
+  </defs>
+  <rect width="1280" height="400" fill="#ffffff"/>
+
+  <!-- Etappe 1: Modell -->
+  <rect x="40" y="110" width="270" height="130" rx="6" fill="#1a2f6e"/>
+  <text class="num" x="64" y="146">Etappe 1</text>
+  <text class="et" x="64" y="182">Modell</text>
+  <text class="th" x="64" y="216">T01–T05</text>
+  <text class="lf" x="64" y="280">Welche vierte Klasse fehlt?</text>
+  <text class="lf" x="64" y="306">Wo Vererbung, wo Interface,</text>
+  <text class="lf" x="64" y="332">wo bewusst nichts?</text>
+
+  <line x1="312" y1="175" x2="346" y2="175" stroke="#031121" stroke-width="3" marker-end="url(#pfeil)"/>
+
+  <!-- Etappe 2: Datenhaltung -->
+  <rect x="350" y="110" width="270" height="130" rx="6" fill="#1a2f6e"/>
+  <text class="num" x="374" y="146">Etappe 2</text>
+  <text class="et" x="374" y="182">Datenhaltung</text>
+  <text class="th" x="374" y="216">T07–T09</text>
+  <text class="lf" x="374" y="280">Reihenfolge?</text>
+  <text class="lf" x="374" y="306">Eindeutigkeit?</text>
+  <text class="lf" x="374" y="332">Zuordnung?</text>
+
+  <line x1="622" y1="175" x2="656" y2="175" stroke="#031121" stroke-width="3" marker-end="url(#pfeil)"/>
+
+  <!-- Etappe 3: Oberfläche und Ereignisse -->
+  <rect x="660" y="110" width="270" height="130" rx="6" fill="#1a2f6e"/>
+  <text class="num" x="684" y="146">Etappe 3</text>
+  <text class="et" x="684" y="182">Oberfläche</text>
+  <text class="th" x="684" y="216">und Ereignisse · T10</text>
+  <text class="lf" x="684" y="280">Mensch tut → Oberfläche zeigt</text>
+  <text class="lf" x="684" y="306">→ welche Modellmethode</text>
+  <text class="lf" x="684" y="332">antwortet – Handler dünn?</text>
+
+  <line x1="932" y1="175" x2="966" y2="175" stroke="#031121" stroke-width="3" marker-end="url(#pfeil)"/>
+
+  <!-- Etappe 4: Robustheit (ausgegraut, Teil B) -->
+  <rect x="970" y="110" width="270" height="130" rx="6" fill="#eef0f2" stroke="#c7cdd4" stroke-width="2"/>
+  <text class="numg" x="994" y="146">Etappe 4</text>
+  <text class="etg" x="994" y="182">Robustheit</text>
+  <text class="thg" x="994" y="216">T06, T11</text>
+  <rect x="1152" y="90" width="82" height="34" rx="4" fill="#fcd430"/>
+  <text class="badge" x="1168" y="113">Teil B</text>
+  <text class="lf" x="994" y="280">Kapselung · Exceptions ·</text>
+  <text class="lf" x="994" y="306">Sonderfälle · Event-Thread</text>
+  <text class="lf" x="994" y="332">– nicht heute</text>
+</svg>

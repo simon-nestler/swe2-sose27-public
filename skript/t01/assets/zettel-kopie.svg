@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+  <title id="t">Karte b = a kopiert den Zettel, nicht das Objekt: zwei Zettel a und b mit derselben Adresse, beide Pfeile treffen dasselbe Karte-Objekt – a == b ergibt true</title>
+  <desc id="d">Links zwei Zettel Karte a und Karte b, beide tragen dieselbe gelb hervorgehobene Adresse. Von beiden führt ein Pfeil auf denselben Kasten Karte-Objekt mit dem Feld vorderseite gleich Haus. Unten der Hinweis, dass a gleich b true ergibt: zwei Zettel, ein Pfeilziel.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .k { font-size: 22px; font-weight: 700; text-anchor: middle; }
+    .kw { font-size: 24px; font-weight: 700; text-anchor: middle; fill: #ffffff; }
+    .code { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    .adr { font-size: 22px; font-weight: 700; text-anchor: middle; }
+    .u { font-size: 18px; fill: #5a6472; text-anchor: middle; }
+    .cap { font-size: 20px; fill: #031121; }
+  </style>
+  <defs>
+    <marker id="pf2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a2f6e"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" fill="#ffffff"/>
+
+  <rect x="90" y="60" width="280" height="150" fill="#ffffff" stroke="#031121" stroke-width="2"/>
+  <rect x="90" y="60" width="280" height="46" fill="#e5effb"/>
+  <text class="k" x="230" y="91">Karte a</text>
+  <rect x="170" y="130" width="120" height="40" fill="#fcd430"/>
+  <text class="adr" x="230" y="157">@7c2f</text>
+
+  <rect x="90" y="280" width="280" height="150" fill="#ffffff" stroke="#031121" stroke-width="2"/>
+  <rect x="90" y="280" width="280" height="46" fill="#e5effb"/>
+  <text class="k" x="230" y="311">Karte b</text>
+  <rect x="170" y="350" width="120" height="40" fill="#fcd430"/>
+  <text class="adr" x="230" y="377">@7c2f</text>
+  <text class="u" x="230" y="465">b = a hat den Zettel kopiert</text>
+
+  <line x1="375" y1="135" x2="695" y2="220" stroke="#1a2f6e" stroke-width="4" marker-end="url(#pf2)"/>
+  <line x1="375" y1="355" x2="695" y2="270" stroke="#1a2f6e" stroke-width="4" marker-end="url(#pf2)"/>
+
+  <rect x="700" y="140" width="420" height="210" fill="#e5effb" stroke="#1a2f6e" stroke-width="2"/>
+  <rect x="700" y="140" width="420" height="56" fill="#1a2f6e"/>
+  <text class="kw" x="910" y="177">Karte-Objekt</text>
+  <rect x="1030" y="118" width="110" height="42" fill="#fcd430"/>
+  <text class="adr" x="1085" y="147">@7c2f</text>
+  <text class="code" x="910" y="285">vorderseite = "Haus"</text>
+  <text class="u" x="910" y="395">ein Objekt – was b verändert, sieht a</text>
+
+  <text class="cap" x="90" y="500">a == b ergibt true: zwei Zettel, ein Pfeilziel – es gibt nichts zu synchronisieren, es ist dasselbe Ding.</text>
+</svg>

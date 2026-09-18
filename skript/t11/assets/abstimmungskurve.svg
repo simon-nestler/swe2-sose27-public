@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Abstimmungskurve der drei Peer-Instruction-Fragen: Anteil richtiger Antworten in erster und zweiter Abstimmung – Schema, wird durch das Live-Ergebnis ersetzt</title>
+  <desc id="d">Balkendiagramm mit drei Fragegruppen. Je Frage zwei Balken: erste und zweite Abstimmung, Anteil richtiger Antworten in Prozent. Typischer Verlauf: Frage 1 (Netzschleife) 78 auf 85, Frage 2 (Stilschleife) kippt von 34 auf 71 – das Nachbargespräch rettet sie, gelb markiert –, Frage 3 (Thread.sleep) 55 auf 80. Schematische Werte, im Termin durch das Moodle-Live-Ergebnis ersetzt.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .v { font-size: 21px; font-weight: 700; text-anchor: middle; }
+    .g { font-size: 21px; fill: #5a6472; text-anchor: middle; }
+    .leg { font-size: 19px; fill: #5a6472; }
+    .tag { font-size: 18px; font-style: italic; fill: #5a6472; text-anchor: end; }
+    .delta { font-size: 19px; font-weight: 700; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="pfeil4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#b8951a"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <!-- Legende und Schema-Hinweis -->
+  <rect x="80" y="40" width="22" height="22" fill="#97a3c6"/>
+  <text class="leg" x="112" y="58">1. Abstimmung</text>
+  <rect x="280" y="40" width="22" height="22" fill="#1a2f6e"/>
+  <text class="leg" x="312" y="58">2. Abstimmung</text>
+  <text class="tag" x="1120" y="58">Schema – wird durch das Moodle-Live-Ergebnis ersetzt</text>
+  <text class="leg" x="80" y="96">Anteil richtiger Antworten in Prozent</text>
+
+  <!-- Achse -->
+  <line x1="80" y1="460" x2="1120" y2="460" stroke="#c7cdd4" stroke-width="2"/>
+  <line x1="80" y1="120" x2="1120" y2="120" stroke="#c7cdd4" stroke-width="1" stroke-dasharray="4 6"/>
+
+  <!-- Frage 1 -->
+  <rect x="198" y="195" width="90" height="265" fill="#97a3c6"/><text class="v" x="243" y="185">78</text>
+  <rect x="312" y="171" width="90" height="289" fill="#1a2f6e"/><text class="v" x="357" y="161">85</text>
+  <text class="g" x="300" y="496">Frage 1 · Netzschleife</text>
+
+  <!-- Frage 2 -->
+  <rect x="538" y="344" width="90" height="116" fill="#97a3c6"/><text class="v" x="583" y="334">34</text>
+  <rect x="652" y="219" width="90" height="241" fill="#1a2f6e"/><text class="v" x="697" y="209">71</text>
+  <path d="M 583 320 Q 640 250 686 226" fill="none" stroke="#fcd430" stroke-width="5" marker-end="url(#pfeil4)"/>
+  <text class="delta" x="628" y="248">der Nachbar</text>
+  <text class="g" x="640" y="496">Frage 2 · Stilschleife</text>
+
+  <!-- Frage 3 -->
+  <rect x="878" y="273" width="90" height="187" fill="#97a3c6"/><text class="v" x="923" y="263">55</text>
+  <rect x="992" y="188" width="90" height="272" fill="#1a2f6e"/><text class="v" x="1037" y="178">80</text>
+  <text class="g" x="980" y="496">Frage 3 · Thread.sleep</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <title>Umkehr des Kontrollflusses: bisher ruft unser Code die Welt, ab heute ruft die Ereignisschleife unseren Code</title>
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5A6472"/>
+    </marker>
+    <marker id="pfeil-dunkel" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#031121"/>
+    </marker>
+  </defs>
+
+  <!-- Trennlinie -->
+  <line x1="600" y1="40" x2="600" y2="440" stroke="#C7CDD4" stroke-width="2"/>
+
+  <!-- Linke Hälfte: bisher -->
+  <text x="300" y="70" text-anchor="middle" font-size="26" font-weight="700" fill="#031121">bisher</text>
+
+  <rect x="90" y="150" width="170" height="80" rx="10" fill="#E5EFFB" stroke="#031121" stroke-width="2"/>
+  <text x="175" y="198" text-anchor="middle" font-size="24" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#031121">main</text>
+
+  <rect x="350" y="150" width="170" height="80" rx="10" fill="#F5F3EE" stroke="#C7CDD4" stroke-width="2"/>
+  <text x="435" y="198" text-anchor="middle" font-size="24" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#5A6472">Scanner</text>
+
+  <line x1="262" y1="172" x2="346" y2="172" stroke="#031121" stroke-width="2.5" marker-end="url(#pfeil-dunkel)"/>
+  <text x="304" y="160" text-anchor="middle" font-size="16" fill="#5A6472">ruft</text>
+  <line x1="348" y1="208" x2="264" y2="208" stroke="#5A6472" stroke-width="2.5" marker-end="url(#pfeil)"/>
+  <text x="304" y="238" text-anchor="middle" font-size="16" fill="#5A6472">antwortet</text>
+
+  <text x="300" y="400" text-anchor="middle" font-size="20" fill="#031121">unser Code ruft, die Welt antwortet</text>
+
+  <!-- Rechte Hälfte: ab heute -->
+  <text x="900" y="70" text-anchor="middle" font-size="26" font-weight="700" fill="#031121">ab heute</text>
+
+  <rect x="760" y="150" width="280" height="90" rx="10" fill="#F5F3EE" stroke="#C7CDD4" stroke-width="2"/>
+  <text x="900" y="188" text-anchor="middle" font-size="21" fill="#5A6472">Ereignisschleife</text>
+  <text x="900" y="216" text-anchor="middle" font-size="17" fill="#5A6472">(Framework)</text>
+
+  <!-- Ereignisse von außen -->
+  <text x="672" y="108" text-anchor="middle" font-size="17" fill="#5A6472">Klick</text>
+  <line x1="690" y1="116" x2="792" y2="150" stroke="#5A6472" stroke-width="2.5" marker-end="url(#pfeil)"/>
+  <text x="900" y="104" text-anchor="middle" font-size="17" fill="#5A6472">Taste</text>
+  <line x1="900" y1="112" x2="900" y2="144" stroke="#5A6472" stroke-width="2.5" marker-end="url(#pfeil)"/>
+  <text x="1128" y="108" text-anchor="middle" font-size="17" fill="#5A6472">Timer</text>
+  <line x1="1110" y1="116" x2="1008" y2="150" stroke="#5A6472" stroke-width="2.5" marker-end="url(#pfeil)"/>
+
+  <!-- Schleife ruft unseren Code -->
+  <line x1="900" y1="242" x2="900" y2="296" stroke="#031121" stroke-width="2.5" marker-end="url(#pfeil-dunkel)"/>
+  <text x="978" y="276" font-size="16" fill="#5A6472">wenn etwas passiert ist</text>
+
+  <rect x="810" y="300" width="180" height="66" rx="10" fill="#E5EFFB" stroke="#031121" stroke-width="2"/>
+  <rect x="810" y="300" width="8" height="66" rx="4" fill="#FCD430"/>
+  <text x="906" y="340" text-anchor="middle" font-size="22" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#031121">handler</text>
+
+  <text x="900" y="400" text-anchor="middle" font-size="20" fill="#031121">die Welt ruft, unser Code antwortet</text>
+</svg>

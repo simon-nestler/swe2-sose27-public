@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="t d">
+  <title id="t">Die Treppe der Wartekommunikation auf dem Fundament „Arbeit ausgelagert (Task, Thread-0)" – darunter, durchgestrichen, der blockierte Handler</title>
+  <desc id="d">Dieselben sechs Stufen der Wartekommunikation, jetzt auf einem gelben Fundament mit der Aufschrift „Arbeit ausgelagert – Task, Thread-0". Darunter steht ein durchgestrichener grauer Kasten „blockierter Handler": Wer die Arbeit nicht auslagert, hat gestalterisch keine Optionen.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .stufe { font-size: 19px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .fundament { font-size: 25px; font-weight: 700; fill: #031121; text-anchor: middle; }
+    .kaputt { font-size: 23px; fill: #5a6472; text-anchor: middle; }
+  </style>
+  <rect width="1200" height="700" fill="#ffffff"/>
+
+  <!-- Stufen -->
+  <rect x="48" y="458" width="176" height="62" fill="#1a2f6e"/>
+  <text class="stufe" x="136" y="494">nichts</text>
+
+  <rect x="232" y="396" width="176" height="124" fill="#1a2f6e"/>
+  <text class="stufe" x="320" y="432">Cursor</text>
+
+  <rect x="416" y="334" width="176" height="186" fill="#1a2f6e"/>
+  <text class="stufe" x="504" y="370">Spinner</text>
+
+  <rect x="600" y="272" width="176" height="248" fill="#1a2f6e"/>
+  <text class="stufe" x="688" y="308">Fortschritt</text>
+  <text class="stufe" x="688" y="332">mit Restzeit</text>
+
+  <rect x="784" y="210" width="176" height="310" fill="#1a2f6e"/>
+  <text class="stufe" x="872" y="246">Skelett-Ansicht</text>
+
+  <rect x="968" y="148" width="176" height="372" fill="#1a2f6e"/>
+  <text class="stufe" x="1056" y="184">optimistisches</text>
+  <text class="stufe" x="1056" y="208">UI</text>
+
+  <!-- Fundament -->
+  <rect x="48" y="528" width="1096" height="58" fill="#fcd430"/>
+  <text class="fundament" x="596" y="565">Arbeit ausgelagert – Task, Thread-0</text>
+
+  <!-- der blockierte Handler, durchgestrichen -->
+  <rect x="340" y="614" width="520" height="60" fill="#f1f3f5" stroke="#9aa3ad" stroke-width="2"/>
+  <text class="kaputt" x="600" y="651">blockierter Handler</text>
+  <line x1="350" y1="620" x2="850" y2="668" stroke="#5a6472" stroke-width="4"/>
+  <line x1="350" y1="668" x2="850" y2="620" stroke="#5a6472" stroke-width="4"/>
+</svg>

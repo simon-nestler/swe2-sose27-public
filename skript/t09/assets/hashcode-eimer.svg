@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 600" role="img" aria-labelledby="t d">
+  <title id="t">Schema: hashCode wählt den Eimer, equals prüft nur dort – so kommt HashSet.contains mit einem Aufruf aus</title>
+  <desc id="d">Oben links das gesuchte Foto bild10000.jpg. Ein Pfeil führt zu hashCode(), von dort ein zweiter Pfeil auf genau einen Eimer einer Reihe von acht Eimern. Der getroffene Eimer ist gelb hervorgehoben und enthält ein einzelnes Element, an dem equals genau einmal prüft. Die übrigen Eimer enthalten wenige graue Elemente. Unten der Hinweis: Ohne überschriebenes hashCode landen alle Elemente im selben Eimer, und aus einem Aufruf werden wieder zehntausend.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .code { font-family: "JetBrains Mono", Menlo, Consolas, monospace; }
+    .h { font-size: 21px; font-weight: 700; }
+    .l { font-size: 19px; }
+    .s { font-size: 17px; fill: #5a6472; }
+    .box { fill: #ffffff; stroke: #c7cdd4; stroke-width: 2; }
+    .eimer { fill: none; stroke: #c7cdd4; stroke-width: 3; }
+    .eimerakzent { fill: none; stroke: #ebb52c; stroke-width: 5; }
+    .element { fill: #f3f3f3; stroke: #c7cdd4; stroke-width: 1.5; }
+    .treffer { fill: #f5f3ee; stroke: #ebb52c; stroke-width: 2; }
+    .pfad { fill: none; stroke: #1a2f6e; stroke-width: 4; marker-end: url(#pfeil); }
+  </style>
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a2f6e"/></marker>
+  </defs>
+  <rect width="1260" height="600" fill="#ffffff"/>
+
+  <!-- Gesuchtes Element -->
+  <rect class="box" x="70" y="36" width="490" height="52"/>
+  <text class="code" x="90" y="69" font-size="18">Foto gesucht = new Foto("bild10000.jpg");</text>
+
+  <!-- hashCode-Schritt -->
+  <path class="pfad" d="M 560 62 C 600 70, 620 90, 650 106"/>
+  <rect x="610" y="110" width="220" height="48" rx="24" fill="#031121"/>
+  <text class="code" x="720" y="141" font-size="21" font-weight="700" fill="#ffffff" text-anchor="middle">hashCode()</text>
+  <path class="pfad" d="M 745 158 C 810 225, 890 255, 932 294"/>
+  <text class="l" x="790" y="222" fill="#1a2f6e" font-weight="700">wählt den Eimer</text>
+
+  <!-- Legende -->
+  <text class="h" x="900" y="52">So kommt die 1 zustande</text>
+  <text class="l" x="900" y="84">1 · hashCode() wählt den Eimer</text>
+  <text class="l" x="900" y="112">2 · equals() prüft nur dort</text>
+
+  <!-- Eimerreihe -->
+  <path class="eimer" d="M 100 300 L 100 460 L 220 460 L 220 300"/>
+  <path class="eimer" d="M 230 300 L 230 460 L 350 460 L 350 300"/>
+  <path class="eimer" d="M 360 300 L 360 460 L 480 460 L 480 300"/>
+  <path class="eimer" d="M 490 300 L 490 460 L 610 460 L 610 300"/>
+  <path class="eimer" d="M 620 300 L 620 460 L 740 460 L 740 300"/>
+  <path class="eimer" d="M 750 300 L 750 460 L 870 460 L 870 300"/>
+  <path class="eimerakzent" d="M 880 300 L 880 460 L 1000 460 L 1000 300"/>
+  <path class="eimer" d="M 1010 300 L 1010 460 L 1130 460 L 1130 300"/>
+
+  <!-- Elemente in den Eimern -->
+  <rect class="element" x="112" y="414" width="96" height="32"/>
+  <rect class="element" x="242" y="414" width="96" height="32"/>
+  <rect class="element" x="242" y="374" width="96" height="32"/>
+  <rect class="element" x="372" y="414" width="96" height="32"/>
+  <rect class="element" x="502" y="414" width="96" height="32"/>
+  <rect class="element" x="632" y="414" width="96" height="32"/>
+  <rect class="element" x="632" y="374" width="96" height="32"/>
+  <rect class="element" x="762" y="414" width="96" height="32"/>
+  <rect class="treffer" x="884" y="412" width="112" height="36"/>
+  <text class="code" x="940" y="436" font-size="13" text-anchor="middle">bild10000.jpg</text>
+  <rect class="element" x="1022" y="414" width="96" height="32"/>
+
+  <!-- Eimer-Nummern -->
+  <text class="s" x="160" y="490" text-anchor="middle">0</text>
+  <text class="s" x="290" y="490" text-anchor="middle">1</text>
+  <text class="s" x="420" y="490" text-anchor="middle">2</text>
+  <text class="s" x="550" y="490" text-anchor="middle">3</text>
+  <text class="s" x="680" y="490" text-anchor="middle">4</text>
+  <text class="s" x="810" y="490" text-anchor="middle">5</text>
+  <text class="s" x="940" y="490" text-anchor="middle">6</text>
+  <text class="s" x="1070" y="490" text-anchor="middle">7</text>
+
+  <text class="h" x="940" y="535" text-anchor="middle">equals(): 1 Aufruf – nur hier</text>
+
+  <!-- Der Haken -->
+  <text class="s" x="100" y="583">Ohne überschriebenes hashCode(): alle Elemente im selben Eimer – aus 1 wird wieder 10.000 (Vertrag aus T03).</text>
+</svg>

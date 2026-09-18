@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 851" role="img" aria-labelledby="t d">
+  <title id="t">Der Semesterplan SWE2: Session 0, 13 Themen mit Teil A und Teil B, drei Anker, sechs Praktikumsblätter ohne KI mit Testat, Klausurzulassung und Klausur</title>
+  <desc id="d">Hervorgehoben (gelber Rahmen, Marke HEUTE): Feld 7. Vierzehn Felder in drei Reihen, von links nach rechts zu lesen. Woche 1 ist Session 0, gestrichelt. Dann die Themen: 1 Auftakt, Klassen und Objekte; 2 Kapselung und Invarianten; 3 Vererbung als Vertrag; 4 Polymorphismus und Bindung; 5 Anker 1, Vererbung oder Schnittstelle; 6 Exceptions und Fehlermeldungen; 7 Verkettete Listen, streichbar als zweites; 8 Rekursion und Binärbäume; 9 Collections und Generics, streichbar als erstes; 10 JavaFX und Ereignissteuerung; 11 Event-Thread und Nebenläufigkeit; 12 Anker 2, Audit-Werkstatt; 13 Anker 3, großer Entwurf. Die Anker 5, 12 und 13 sind dunkelblau. Jedes Thema hat Teil A und Teil B à 90 Minuten. Hellblaue Marken unter den Themen zeigen, wann ein Praktikumsblatt kommt: Blatt 1 nach Thema 2, Blatt 2 nach Thema 3, Blatt 3 nach Thema 8, Blatt 4 nach Thema 9, Blatt 5 nach Thema 10, Blatt 6 ab Thema 11 parallel bis Thema 13. Jedes Blatt entsteht ohne KI und endet mit einem Testat. Gelbe Marken: Klausurzulassung über das Praktikum, Klausur mit 120 Minuten ohne Rechner. Ein gestricheltes Feld nach Thema 13: Kommt eine Woche hinzu, wird sie Fragestunde.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .num { font-size: 24px; font-weight: 700; }
+    .numw { font-size: 24px; font-weight: 700; fill: #ffffff; }
+    .tt { font-size: 18px; }
+    .ttw { font-size: 18px; fill: #dbe6f5; }
+    .utag { font-size: 18px; font-weight: 700; }
+    .mtag { font-size: 18px; font-weight: 700; }
+    .leg { font-size: 20px; fill: #5a6472; }
+    .foot { font-size: 21px; fill: #5a6472; }
+    .drop { font-size: 15px; font-style: italic; fill: #5a6472; }
+    .chip { font-size: 14px; font-weight: 700; letter-spacing: .06em; fill: #031121; }
+  </style>
+  <rect width="1200" height="851" fill="#ffffff"/>
+  <rect x="40" y="95" width="176" height="125" rx="10" fill="none" stroke="#5a6472" stroke-width="2" stroke-dasharray="8 6"/>
+  <text class="tt" x="60" y="152">Woche 1:</text>
+  <text class="tt" x="60" y="175">Session 0</text>
+  <rect x="228" y="95" width="176" height="125" rx="10" fill="#e2eefc"/>
+  <text class="num" x="248" y="129">1</text>
+  <text class="tt" x="248" y="159">Auftakt: Klassen</text>
+  <text class="tt" x="248" y="182">und Objekte</text>
+  <rect x="416" y="95" width="176" height="125" rx="10" fill="#e2eefc"/>
+  <text class="num" x="436" y="129">2</text>
+  <text class="tt" x="436" y="159">Kapselung und</text>
+  <text class="tt" x="436" y="182">Invarianten</text>
+  <rect x="604" y="95" width="176" height="125" rx="10" fill="#e2eefc"/>
+  <text class="num" x="624" y="129">3</text>
+  <text class="tt" x="624" y="159">Vererbung</text>
+  <text class="tt" x="624" y="182">als Vertrag</text>
+  <rect x="792" y="95" width="176" height="125" rx="10" fill="#e2eefc"/>
+  <text class="num" x="812" y="129">4</text>
+  <text class="tt" x="812" y="159">Polymorphismus</text>
+  <text class="tt" x="812" y="182">und Bindung</text>
+  <rect x="980" y="95" width="176" height="125" rx="10" fill="#1a2f6e"/>
+  <text class="numw" x="1000" y="129">5</text>
+  <text class="ttw" x="1000" y="159">Anker 1:</text>
+  <text class="ttw" x="1000" y="182">Vererbung oder</text>
+  <text class="ttw" x="1000" y="205">Schnittstelle</text>
+  <rect x="40" y="330" width="176" height="125" rx="10" fill="#e2eefc"/>
+  <text class="num" x="60" y="364">6</text>
+  <text class="tt" x="60" y="394">Exceptions und</text>
+  <text class="tt" x="60" y="417">Fehlermeldungen</text>
+  <rect x="228" y="330" width="176" height="125" rx="10" fill="#e2eefc"/>
+  <text class="num" x="248" y="364">7</text>
+  <text class="tt" x="248" y="394">Verkettete</text>
+  <text class="tt" x="248" y="417">Listen</text>
+  <text class="drop" x="248" y="449">streichbar · 2.</text>
+  <rect x="223" y="325" width="186" height="135" rx="13" fill="none" stroke="#fcd430" stroke-width="6"/>
+  <rect x="325" y="342" width="71" height="26" rx="13" fill="#fcd430"/>
+  <text class="chip" x="360" y="360" text-anchor="middle">HEUTE</text>
+  <rect x="416" y="330" width="176" height="125" rx="10" fill="#e2eefc"/>
+  <text class="num" x="436" y="364">8</text>
+  <text class="tt" x="436" y="394">Rekursion und</text>
+  <text class="tt" x="436" y="417">Binärbäume</text>
+  <rect x="604" y="330" width="176" height="125" rx="10" fill="#e2eefc"/>
+  <text class="num" x="624" y="364">9</text>
+  <text class="tt" x="624" y="394">Collections</text>
+  <text class="tt" x="624" y="417">und Generics</text>
+  <text class="drop" x="624" y="449">streichbar · 1.</text>
+  <rect x="792" y="330" width="176" height="125" rx="10" fill="#e2eefc"/>
+  <text class="num" x="812" y="364">10</text>
+  <text class="tt" x="812" y="394">JavaFX und</text>
+  <text class="tt" x="812" y="417">Ereignissteuerung</text>
+  <rect x="980" y="330" width="176" height="125" rx="10" fill="#e2eefc"/>
+  <text class="num" x="1000" y="364">11</text>
+  <text class="tt" x="1000" y="394">Event-Thread und</text>
+  <text class="tt" x="1000" y="417">Nebenläufigkeit</text>
+  <rect x="40" y="525" width="176" height="125" rx="10" fill="#1a2f6e"/>
+  <text class="numw" x="60" y="559">12</text>
+  <text class="ttw" x="60" y="589">Anker 2:</text>
+  <text class="ttw" x="60" y="612">Audit-Werkstatt</text>
+  <rect x="228" y="525" width="176" height="125" rx="10" fill="#1a2f6e"/>
+  <text class="numw" x="248" y="559">13</text>
+  <text class="ttw" x="248" y="589">Anker 3:</text>
+  <text class="ttw" x="248" y="612">großer Entwurf</text>
+  <rect x="416" y="525" width="176" height="125" rx="10" fill="none" stroke="#5a6472" stroke-width="2" stroke-dasharray="8 6"/>
+  <text class="tt" x="436" y="582">Woche extra?</text>
+  <text class="tt" x="436" y="605">Fragestunde</text>
+  <rect x="416" y="232" width="176" height="32" rx="6" fill="#7fb6f6"/>
+  <text class="utag" x="504" y="254" text-anchor="middle">Blatt 1</text>
+  <rect x="604" y="232" width="176" height="32" rx="6" fill="#7fb6f6"/>
+  <text class="utag" x="692" y="254" text-anchor="middle">Blatt 2</text>
+  <rect x="416" y="467" width="176" height="32" rx="6" fill="#7fb6f6"/>
+  <text class="utag" x="504" y="489" text-anchor="middle">Blatt 3</text>
+  <rect x="604" y="467" width="176" height="32" rx="6" fill="#7fb6f6"/>
+  <text class="utag" x="692" y="489" text-anchor="middle">Blatt 4</text>
+  <rect x="792" y="467" width="176" height="32" rx="6" fill="#7fb6f6"/>
+  <text class="utag" x="880" y="489" text-anchor="middle">Blatt 5</text>
+  <rect x="980" y="467" width="176" height="32" rx="6" fill="#7fb6f6"/>
+  <text class="utag" x="1068" y="489" text-anchor="middle">Blatt 6 · bis T13</text>
+  <rect x="630" y="539" width="350" height="34" rx="6" fill="#fcd430"/>
+  <text class="mtag" x="648" y="562">Klausurzulassung · Praktikum</text>
+  <rect x="630" y="587" width="350" height="34" rx="6" fill="#fcd430"/>
+  <text class="mtag" x="648" y="610">Klausur · 120 min · ohne Rechner</text>
+  <line x1="40" y1="716" x2="1160" y2="716" stroke="#c7cdd4" stroke-width="1"/>
+  <rect x="40" y="733" width="26" height="26" rx="5" fill="#e2eefc"/>
+  <text class="leg" x="78" y="753">Thema · Teil A + Teil B, je 90 Minuten</text>
+  <rect x="640" y="733" width="26" height="26" rx="5" fill="#1a2f6e"/>
+  <text class="leg" x="678" y="753">Anker: Entwurfs-Gericht, Audit, Entwurf</text>
+  <rect x="40" y="773" width="26" height="26" rx="5" fill="#7fb6f6"/>
+  <text class="leg" x="78" y="793">Praktikumsblatt ohne KI, mit Testat</text>
+  <rect x="640" y="773" width="26" height="26" rx="5" fill="#fcd430"/>
+  <text class="leg" x="678" y="793">Zulassung und Klausur</text>
+  <text class="foot" x="40" y="833">Schema, SWE2 · 13 Themen in 14 Wochen · Blatt steht unter dem Thema, nach dem es kommt</text>
+</svg>

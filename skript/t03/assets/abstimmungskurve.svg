@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Schema einer Peer-Instruction-Abstimmungskurve: Verteilung der Antworten A bis D vor und nach der Nachbarrunde – die richtige Antwort B wächst von 35 auf 70 Prozent</title>
+  <desc id="d">Zwei Balkengruppen. Links die erste Abstimmung, einzeln: A 30, B 35, C 25, D 10 Prozent. Rechts die zweite Abstimmung nach dem Nachbargespräch: A 15, B 70, C 10, D 5 Prozent. Der B-Balken der zweiten Abstimmung ist gelb hervorgehoben. Ein Hinweis kennzeichnet die Werte als Schema; die echte Verteilung entsteht live in Moodle.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 26px; font-weight: 700; }
+    .q { font-size: 18px; fill: #5a6472; }
+    .v { font-size: 22px; font-weight: 700; text-anchor: middle; }
+    .y { font-size: 20px; fill: #5a6472; text-anchor: middle; }
+    .s { font-size: 18px; fill: #5a6472; }
+    .bar1 { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .bar2 { fill: #1a2f6e; }
+    .akzent { fill: #fcd430; }
+    .grid { stroke: #c7cdd4; stroke-width: 1; }
+  </style>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <!-- Panel links: 1. Abstimmung -->
+  <text class="h" x="100" y="60">1. Abstimmung – einzeln</text>
+  <text class="q" x="100" y="88">Stimmen in Prozent</text>
+  <line class="grid" x1="80" y1="440" x2="560" y2="440"/>
+  <g>
+    <rect class="bar1" x="110" y="338" width="80" height="102"/><text class="v" x="150" y="329">30</text><text class="y" x="150" y="472">A</text>
+    <rect class="bar1" x="220" y="321" width="80" height="119"/><text class="v" x="260" y="312">35</text><text class="y" x="260" y="472">B</text>
+    <rect class="bar1" x="330" y="355" width="80" height="85"/><text class="v" x="370" y="346">25</text><text class="y" x="370" y="472">C</text>
+    <rect class="bar1" x="440" y="406" width="80" height="34"/><text class="v" x="480" y="397">10</text><text class="y" x="480" y="472">D</text>
+  </g>
+
+  <!-- Panel rechts: 2. Abstimmung -->
+  <text class="h" x="700" y="60">2. Abstimmung – nach dem Nachbargespräch</text>
+  <text class="q" x="700" y="88">Stimmen in Prozent</text>
+  <line class="grid" x1="680" y1="440" x2="1160" y2="440"/>
+  <g>
+    <rect class="bar2" x="710" y="389" width="80" height="51"/><text class="v" x="750" y="380">15</text><text class="y" x="750" y="472">A</text>
+    <rect class="akzent" x="820" y="202" width="80" height="238"/><text class="v" x="860" y="193">70</text><text class="y" x="860" y="472">B</text>
+    <rect class="bar2" x="930" y="406" width="80" height="34"/><text class="v" x="970" y="397">10</text><text class="y" x="970" y="472">C</text>
+    <rect class="bar2" x="1040" y="423" width="80" height="17"/><text class="v" x="1080" y="414">5</text><text class="y" x="1080" y="472">D</text>
+  </g>
+
+  <!-- Fussnote -->
+  <text class="s" x="100" y="530">Schema mit typischen Werten – die echte Verteilung entsteht live in der Moodle-Abstimmung.</text>
+  <rect class="akzent" x="820" y="522" width="26" height="8"/>
+  <text class="s" x="856" y="530">B – die richtige Antwort</text>
+</svg>

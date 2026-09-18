@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Referenz-Zettel aus T01: Die Variable ist ein Zettel mit einem Pfeil auf das Objekt im Speicher</title>
+  <desc id="d">Links ein Zettel mit dem Variablennamen medium und dem deklarierten Typ, rechts das Objekt im Speicher. Ein Pfeil führt vom Zettel zum Objekt. Darunter die Frage: Was steht auf dem Zettel, und was steckt im Objekt?</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 26px; font-weight: 700; }
+    .m { font-size: 30px; font-weight: 700; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+    .s { font-size: 21px; fill: #5a6472; }
+    .w { font-size: 24px; fill: #ffffff; }
+    .q { font-size: 26px; font-weight: 700; }
+  </style>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <!-- Zettel (Variable) -->
+  <g>
+    <path d="M 90 140 L 400 140 L 400 340 L 350 390 L 90 390 Z" fill="#ffffff" stroke="#031121" stroke-width="3"/>
+    <path d="M 400 340 L 350 340 L 350 390 Z" fill="#e5effb" stroke="#031121" stroke-width="3"/>
+    <text class="s" x="120" y="185">die Variable – ein Zettel</text>
+    <text class="m" x="120" y="240">medium</text>
+    <line x1="120" y1="262" x2="290" y2="262" stroke="#fcd430" stroke-width="5"/>
+    <text class="s" x="120" y="305">darauf steht: der Name</text>
+    <text class="s" x="120" y="335">und ein deklarierter Typ</text>
+  </g>
+
+  <!-- Pfeil -->
+  <g>
+    <line x1="405" y1="255" x2="720" y2="255" stroke="#031121" stroke-width="5"/>
+    <path d="M 750 255 L 712 237 L 712 273 Z" fill="#031121"/>
+    <text class="s" x="470" y="230">die Referenz zeigt auf …</text>
+  </g>
+
+  <!-- Objekt -->
+  <g>
+    <rect x="760" y="120" width="350" height="280" rx="28" fill="#1a2f6e"/>
+    <text class="w" x="795" y="175" font-weight="700">das Objekt im Speicher</text>
+    <line x1="795" y1="200" x2="1075" y2="200" stroke="#c7cdd4" stroke-width="1.5"/>
+    <text class="w" x="795" y="245">entstanden aus genau</text>
+    <text class="w" x="795" y="278">einer Klasse (new) –</text>
+    <text class="w" x="795" y="325">es kennt sein Verhalten</text>
+  </g>
+
+  <!-- Frage -->
+  <text class="q" x="90" y="490">Was steht auf dem Zettel – und was steckt im Objekt?</text>
+</svg>

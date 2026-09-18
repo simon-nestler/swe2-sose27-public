@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Skizze 1: Klassendiagramm der Medium-Hierarchie – Medium mit titel und anzeigen(), darunter Foto und Video, abspielen() mit Fragezeichen zwischen den Ebenen</title>
+  <desc id="d">Oben die Klasse Medium mit dem Feld titel und der Methode anzeigen(). Darunter die Klassen Foto und Video, beide erben mit hohlen Dreieckspfeilen von Medium. Zwischen den Ebenen steht abspielen() mit einem gelb markierten Fragezeichen: Wo die Methode hingehört, ist offen.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .name { font-size: 28px; font-weight: 700; text-anchor: middle; }
+    .member { font-size: 24px; }
+    .frage { font-size: 26px; font-weight: 700; }
+    .box { fill: #ffffff; stroke: #1a2f6e; stroke-width: 3; }
+    .sep { stroke: #1a2f6e; stroke-width: 2; }
+    .erbt { stroke: #1a2f6e; stroke-width: 3; fill: none; }
+    .dreieck { fill: #ffffff; stroke: #1a2f6e; stroke-width: 3; }
+  </style>
+  <rect width="1200" height="620" fill="#ffffff"/>
+
+  <!-- Medium -->
+  <g>
+    <rect class="box" x="440" y="50" width="320" height="150"/>
+    <text class="name" x="600" y="90">Medium</text>
+    <line class="sep" x1="440" y1="105" x2="760" y2="105"/>
+    <text class="member" x="460" y="140">titel</text>
+    <line class="sep" x1="440" y1="155" x2="760" y2="155"/>
+    <text class="member" x="460" y="188">anzeigen()</text>
+  </g>
+
+  <!-- Vererbungspfeile -->
+  <path class="erbt" d="M 330 470 L 330 340 L 585 340 L 585 228"/>
+  <polygon class="dreieck" points="585,200 570,228 600,228"/>
+  <path class="erbt" d="M 870 470 L 870 340 L 615 340 L 615 228"/>
+  <polygon class="dreieck" points="615,200 600,228 630,228"/>
+
+  <!-- Foto -->
+  <g>
+    <rect class="box" x="200" y="470" width="260" height="90"/>
+    <text class="name" x="330" y="510">Foto</text>
+    <line class="sep" x1="200" y1="525" x2="460" y2="525"/>
+  </g>
+
+  <!-- Video -->
+  <g>
+    <rect class="box" x="740" y="470" width="260" height="90"/>
+    <text class="name" x="870" y="510">Video</text>
+    <line class="sep" x1="740" y1="525" x2="1000" y2="525"/>
+  </g>
+
+  <!-- abspielen() mit Fragezeichen zwischen den Ebenen -->
+  <g>
+    <rect x="820" y="270" width="270" height="64" rx="10" fill="#ffffff" stroke="#5a6472" stroke-width="2" stroke-dasharray="8 6"/>
+    <text class="frage" x="845" y="312">abspielen()</text>
+    <circle cx="1050" cy="302" r="26" fill="#fcd430"/>
+    <text class="frage" x="1042" y="312">?</text>
+  </g>
+</svg>

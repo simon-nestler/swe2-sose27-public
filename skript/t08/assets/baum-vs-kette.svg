@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 640" role="img" aria-labelledby="bk-t bk-d">
+  <title id="bk-t">Dieselben fünf Zahlen, zweimal eingefügt: links ein Baum der Tiefe 3, rechts eine Kette der Tiefe 5</title>
+  <desc id="bk-d">Links der binäre Suchbaum aus der Eingabe 5, 2, 8, 1, 9: Wurzel 5, darunter 2 und 8, darunter 1 und 9 – Tiefe 3. Rechts dieselben Zahlen sortiert eingegeben als 1, 2, 5, 8, 9: jeder Knoten hat nur ein rechtes Kind, die Struktur ist eine Kette der Tiefe 5, jeder linke Kindplatz bleibt null.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .bk-n { font-size: 28px; font-weight: 700; text-anchor: middle; }
+    .bk-l { font-size: 21px; font-weight: 700; }
+    .bk-s { font-size: 18px; fill: #5a6472; }
+    .bk-k { fill: #e5effb; stroke: #1a2f6e; stroke-width: 3; }
+    .bk-e { stroke: #1a2f6e; stroke-width: 3; }
+    .bk-null { fill: none; stroke: #9aa1aa; stroke-width: 2; stroke-dasharray: 5 4; }
+  </style>
+  <rect width="1260" height="640" fill="#ffffff"/>
+  <line x1="630" y1="60" x2="630" y2="600" stroke="#c7cdd4" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <!-- Links: der Baum -->
+  <text class="bk-l" x="80" y="80">Eingabe: 5, 2, 8, 1, 9</text>
+  <line class="bk-e" x1="300" y1="196" x2="212" y2="286"/>
+  <line class="bk-e" x1="360" y1="196" x2="448" y2="286"/>
+  <line class="bk-e" x1="208" y1="352" x2="152" y2="432"/>
+  <line class="bk-e" x1="452" y1="352" x2="508" y2="432"/>
+  <circle class="bk-k" cx="330" cy="170" r="38"/><text class="bk-n" x="330" y="181">5</text>
+  <circle class="bk-k" cx="190" cy="320" r="36"/><text class="bk-n" x="190" y="331">2</text>
+  <circle class="bk-k" cx="470" cy="320" r="36"/><text class="bk-n" x="470" y="331">8</text>
+  <circle class="bk-k" cx="140" cy="470" r="34"/><text class="bk-n" x="140" y="481">1</text>
+  <circle class="bk-k" cx="520" cy="470" r="34"/><text class="bk-n" x="520" y="481">9</text>
+  <text class="bk-l" x="80" y="590">Tiefe 3</text>
+
+  <!-- Rechts: die Kette -->
+  <text class="bk-l" x="700" y="80">Eingabe: 1, 2, 5, 8, 9 – sortiert</text>
+  <line class="bk-e" x1="792" y1="146" x2="866" y2="216"/>
+  <line class="bk-e" x1="884" y1="238" x2="958" y2="308"/>
+  <line class="bk-e" x1="976" y1="330" x2="1050" y2="400"/>
+  <line class="bk-e" x1="1068" y1="422" x2="1142" y2="492"/>
+  <circle class="bk-k" cx="770" cy="124" r="32"/><text class="bk-n" x="770" y="135">1</text>
+  <circle class="bk-k" cx="862" cy="216" r="32"/><text class="bk-n" x="862" y="227">2</text>
+  <circle class="bk-k" cx="954" cy="308" r="32"/><text class="bk-n" x="954" y="319">5</text>
+  <circle class="bk-k" cx="1046" cy="400" r="32"/><text class="bk-n" x="1046" y="411">8</text>
+  <circle class="bk-k" cx="1138" cy="492" r="32"/><text class="bk-n" x="1138" y="503">9</text>
+  <!-- leere linke Kindplätze -->
+  <line x1="748" y1="148" x2="712" y2="196" stroke="#9aa1aa" stroke-width="2" stroke-dasharray="5 4"/>
+  <rect class="bk-null" x="682" y="200" width="56" height="34" rx="6"/><text class="bk-s" x="694" y="223">null</text>
+  <line x1="840" y1="240" x2="804" y2="288" stroke="#9aa1aa" stroke-width="2" stroke-dasharray="5 4"/>
+  <rect class="bk-null" x="774" y="292" width="56" height="34" rx="6"/><text class="bk-s" x="786" y="315">null</text>
+  <line x1="932" y1="332" x2="896" y2="380" stroke="#9aa1aa" stroke-width="2" stroke-dasharray="5 4"/>
+  <rect class="bk-null" x="866" y="384" width="56" height="34" rx="6"/><text class="bk-s" x="878" y="407">null</text>
+  <line x1="1024" y1="424" x2="988" y2="472" stroke="#9aa1aa" stroke-width="2" stroke-dasharray="5 4"/>
+  <rect class="bk-null" x="958" y="476" width="56" height="34" rx="6"/><text class="bk-s" x="970" y="499">null</text>
+  <text class="bk-l" x="700" y="590">Tiefe 5 – jeder Knoten nur ein rechtes Kind</text>
+</svg>

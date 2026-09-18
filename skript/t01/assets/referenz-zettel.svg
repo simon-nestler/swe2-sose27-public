@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+  <title id="t">Das Gedächtnisbild: Die Variable a ist ein Zettel, auf dem eine Adresse steht; ein Pfeil führt vom Zettel zum Karte-Objekt mit dem Feld vorderseite = Haus</title>
+  <desc id="d">Links ein Zettel mit der Beschriftung Karte a, darauf gelb hervorgehoben die Adresse. Ein Pfeil führt nach rechts zu einem Kasten Karte-Objekt, der dieselbe Adresse als Etikett trägt und das Feld vorderseite gleich Haus enthält.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .k { font-size: 24px; font-weight: 700; text-anchor: middle; }
+    .kw { font-size: 24px; font-weight: 700; text-anchor: middle; fill: #ffffff; }
+    .code { font-size: 26px; font-weight: 600; text-anchor: middle; }
+    .adr { font-size: 24px; font-weight: 700; text-anchor: middle; }
+    .u { font-size: 18px; fill: #5a6472; text-anchor: middle; }
+    .cap { font-size: 20px; fill: #031121; }
+  </style>
+  <defs>
+    <marker id="pf" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a2f6e"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="520" fill="#ffffff"/>
+
+  <rect x="90" y="140" width="300" height="200" fill="#ffffff" stroke="#031121" stroke-width="2"/>
+  <rect x="90" y="140" width="300" height="56" fill="#e5effb"/>
+  <text class="k" x="240" y="177">Karte a</text>
+  <text class="u" x="240" y="240">auf dem Zettel steht:</text>
+  <rect x="175" y="255" width="130" height="44" fill="#fcd430"/>
+  <text class="adr" x="240" y="285">@7c2f</text>
+  <text class="u" x="240" y="380">die Variable – ein Zettel</text>
+
+  <line x1="395" y1="240" x2="695" y2="240" stroke="#1a2f6e" stroke-width="4" marker-end="url(#pf)"/>
+
+  <rect x="700" y="120" width="420" height="240" fill="#e5effb" stroke="#1a2f6e" stroke-width="2"/>
+  <rect x="700" y="120" width="420" height="58" fill="#1a2f6e"/>
+  <text class="kw" x="910" y="158">Karte-Objekt</text>
+  <rect x="1030" y="98" width="110" height="42" fill="#fcd430"/>
+  <text class="adr" x="1085" y="127">@7c2f</text>
+  <text class="code" x="910" y="265">vorderseite = "Haus"</text>
+  <text class="u" x="910" y="400">das Objekt – im Speicher, woanders</text>
+
+  <text class="cap" x="90" y="470">new Karte() gibt die Adresse zurück – die Variable bekommt den Zettel, nicht das Haus.</text>
+</svg>

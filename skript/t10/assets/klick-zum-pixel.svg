@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 620" role="img" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <title>Der Weg vom Klick zum Pixel in vier Schritten: Mensch klickt, Framework stellt zu (Capturing abwärts, Bubbling aufwärts), Handler läuft – unser Code –, Framework zeichnet</title>
+  <defs>
+    <marker id="kp-pfeil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5A6472"/>
+    </marker>
+  </defs>
+
+  <!-- Schritt 1: Mensch klickt (Framework-grau) -->
+  <rect x="40" y="120" width="290" height="360" rx="14" fill="#F3F3F3" stroke="#C7CDD4" stroke-width="2"/>
+  <circle cx="76" cy="156" r="20" fill="#5A6472"/>
+  <text x="76" y="164" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">1</text>
+  <text x="110" y="164" font-size="23" font-weight="700" fill="#031121">Mensch klickt</text>
+  <text x="66" y="220" font-size="18" fill="#5A6472">Das Betriebssystem meldet</text>
+  <text x="66" y="248" font-size="18" fill="#5A6472">ein Mausereignis.</text>
+  <rect x="66" y="416" width="146" height="34" rx="17" fill="#FFFFFF" stroke="#C7CDD4" stroke-width="1.5"/>
+  <text x="139" y="439" text-anchor="middle" font-size="16" fill="#5A6472">Framework</text>
+
+  <!-- Schritt 2: Framework stellt zu, mit Capturing/Bubbling -->
+  <rect x="390" y="120" width="290" height="360" rx="14" fill="#F3F3F3" stroke="#C7CDD4" stroke-width="2"/>
+  <circle cx="426" cy="156" r="20" fill="#5A6472"/>
+  <text x="426" y="164" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">2</text>
+  <text x="460" y="164" font-size="23" font-weight="700" fill="#031121">Framework stellt zu</text>
+  <text x="416" y="212" font-size="17" fill="#5A6472">Der JavaFX-Anwendungsthread baut</text>
+  <text x="416" y="238" font-size="17" fill="#5A6472">die Route zum Zielknoten.</text>
+
+  <rect x="480" y="262" width="110" height="38" rx="19" fill="#FFFFFF" stroke="#5A6472" stroke-width="1.5"/>
+  <text x="535" y="288" text-anchor="middle" font-size="17" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#031121">Scene</text>
+  <line x1="535" y1="300" x2="535" y2="322" stroke="#5A6472" stroke-width="1.5"/>
+  <rect x="480" y="324" width="110" height="38" rx="19" fill="#FFFFFF" stroke="#5A6472" stroke-width="1.5"/>
+  <text x="535" y="350" text-anchor="middle" font-size="17" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#031121">VBox</text>
+  <line x1="535" y1="362" x2="535" y2="384" stroke="#5A6472" stroke-width="1.5"/>
+  <rect x="480" y="386" width="110" height="38" rx="19" fill="#FFFFFF" stroke="#031121" stroke-width="2.5"/>
+  <text x="535" y="412" text-anchor="middle" font-size="17" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#031121">Button</text>
+
+  <line x1="446" y1="268" x2="446" y2="416" stroke="#5A6472" stroke-width="2" marker-end="url(#kp-pfeil)"/>
+  <text x="438" y="350" text-anchor="middle" font-size="14" fill="#5A6472" transform="rotate(-90 438 350)">Capturing</text>
+  <line x1="626" y1="418" x2="626" y2="270" stroke="#5A6472" stroke-width="2" marker-end="url(#kp-pfeil)"/>
+  <text x="634" y="350" text-anchor="middle" font-size="14" fill="#5A6472" transform="rotate(90 634 350)">Bubbling</text>
+  <text x="535" y="455" text-anchor="middle" font-size="15" fill="#5A6472">Zielknoten</text>
+
+  <!-- Schritt 3: Handler läuft (unser Code, Akzent) -->
+  <rect x="740" y="120" width="290" height="360" rx="14" fill="#FFFFFF" stroke="#FCD430" stroke-width="6"/>
+  <circle cx="776" cy="156" r="20" fill="#031121"/>
+  <text x="776" y="164" text-anchor="middle" font-size="21" font-weight="700" fill="#FCD430">3</text>
+  <text x="810" y="164" font-size="23" font-weight="700" fill="#031121">Handler läuft</text>
+  <text x="766" y="220" font-size="18" fill="#031121">Der mit setOnAction</text>
+  <text x="766" y="248" font-size="18" fill="#031121">registrierte Handler läuft:</text>
+  <rect x="766" y="278" width="238" height="46" rx="8" fill="#F3F3F3" stroke="#C7CDD4" stroke-width="1.5"/>
+  <text x="885" y="308" text-anchor="middle" font-size="18" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#031121">e -&gt; { … }</text>
+  <rect x="766" y="416" width="146" height="34" rx="17" fill="#FCD430"/>
+  <text x="839" y="439" text-anchor="middle" font-size="16" font-weight="700" fill="#031121">unser Code</text>
+
+  <!-- Schritt 4: Framework zeichnet (Framework-grau) -->
+  <rect x="1090" y="120" width="290" height="360" rx="14" fill="#F3F3F3" stroke="#C7CDD4" stroke-width="2"/>
+  <circle cx="1126" cy="156" r="20" fill="#5A6472"/>
+  <text x="1126" y="164" text-anchor="middle" font-size="21" font-weight="700" fill="#FFFFFF">4</text>
+  <text x="1160" y="164" font-size="23" font-weight="700" fill="#031121">Framework zeichnet</text>
+  <text x="1116" y="220" font-size="18" fill="#5A6472">Eigenschaften geändert</text>
+  <text x="1116" y="248" font-size="18" fill="#5A6472">(setText) – „schmutzig".</text>
+  <text x="1116" y="290" font-size="18" fill="#5A6472">Beim nächsten Puls:</text>
+  <text x="1116" y="318" font-size="18" fill="#5A6472">Layout und Bild neu.</text>
+  <rect x="1116" y="416" width="146" height="34" rx="17" fill="#FFFFFF" stroke="#C7CDD4" stroke-width="1.5"/>
+  <text x="1189" y="439" text-anchor="middle" font-size="16" fill="#5A6472">Framework</text>
+
+  <!-- Verbindungspfeile -->
+  <line x1="332" y1="300" x2="386" y2="300" stroke="#5A6472" stroke-width="3" marker-end="url(#kp-pfeil)"/>
+  <line x1="682" y1="300" x2="736" y2="300" stroke="#5A6472" stroke-width="3" marker-end="url(#kp-pfeil)"/>
+  <line x1="1032" y1="300" x2="1086" y2="300" stroke="#5A6472" stroke-width="3" marker-end="url(#kp-pfeil)"/>
+
+  <text x="700" y="560" text-anchor="middle" font-size="20" fill="#031121">Von vier Schritten schreiben wir genau einen.</text>
+</svg>

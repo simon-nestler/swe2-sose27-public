@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Klassendiagramm: IconButton erbt von Button, Button erbt von Control – render() auf allen drei Klassen</title>
+  <desc id="d">Drei Klassenkästen übereinander. Unten IconButton, darüber Button, oben Control. Hohle Pfeilspitzen zeigen von der Unterklasse zur Oberklasse nach oben. Jede der drei Klassen führt eine eigene Fassung von render(), gelb markiert.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .n { font-size: 28px; font-weight: 700; text-anchor: middle; }
+    .m { font-size: 22px; text-anchor: middle; }
+    .s { font-size: 18px; fill: #5a6472; }
+    .name { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .meth { fill: #ffffff; stroke: #c7cdd4; stroke-width: 2; }
+    .edge { stroke: #1a2f6e; stroke-width: 3; fill: none; }
+    .tri { fill: #ffffff; stroke: #1a2f6e; stroke-width: 3; }
+    .akzent { fill: #fcd430; }
+  </style>
+  <rect width="1200" height="620" fill="#ffffff"/>
+
+  <!-- Control -->
+  <rect class="name" x="440" y="60" width="320" height="50"/>
+  <text class="n" x="600" y="94">Control</text>
+  <rect class="meth" x="440" y="110" width="320" height="48"/>
+  <text class="m" x="600" y="141">render()</text>
+  <rect class="akzent" x="550" y="148" width="100" height="4"/>
+
+  <!-- Pfeil Button -> Control -->
+  <line class="edge" x1="600" y1="250" x2="600" y2="184"/>
+  <polygon class="tri" points="600,158 584,184 616,184"/>
+
+  <!-- Button -->
+  <rect class="name" x="440" y="250" width="320" height="50"/>
+  <text class="n" x="600" y="284">Button</text>
+  <rect class="meth" x="440" y="300" width="320" height="48"/>
+  <text class="m" x="600" y="331">render()</text>
+  <rect class="akzent" x="550" y="338" width="100" height="4"/>
+
+  <!-- Pfeil IconButton -> Button -->
+  <line class="edge" x1="600" y1="440" x2="600" y2="374"/>
+  <polygon class="tri" points="600,348 584,374 616,374"/>
+
+  <!-- IconButton -->
+  <rect class="name" x="440" y="440" width="320" height="50"/>
+  <text class="n" x="600" y="474">IconButton</text>
+  <rect class="meth" x="440" y="490" width="320" height="48"/>
+  <text class="m" x="600" y="521">render()</text>
+  <rect class="akzent" x="550" y="528" width="100" height="4"/>
+
+  <!-- Legende -->
+  <polygon class="tri" points="72,578 60,598 84,598"/>
+  <text class="s" x="100" y="594">erbt von – der Pfeil zeigt zur Oberklasse</text>
+  <rect class="akzent" x="560" y="586" width="26" height="8"/>
+  <text class="s" x="600" y="594">render(): auf jeder Stufe eine eigene Fassung</text>
+</svg>

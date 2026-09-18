@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Die Theke aus Teil A, diese Woche: alle Gäste stehen in der Küche, weil die Tür im Tresen offen stand</title>
+  <desc id="d">Dasselbe Theken-Schema wie in Teil A, aber der Tresen hat unten eine offene Tür, gelb markiert. Die Karte im Gastraum hängt unbenutzt und ausgegraut. Drei Gäste stehen rechts in der Küche direkt am Herd und am Topf saldo. Ein Pfeil führt vom Gastraum durch die offene Tür in die Küche.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 26px; font-weight: 700; }
+    .l { font-size: 21px; }
+    .s { font-size: 18px; fill: #5a6472; }
+    .mono { font-family: "SF Mono", "Cascadia Code", Consolas, Menlo, monospace; font-size: 20px; }
+    .box { fill: #ffffff; stroke: #c7cdd4; stroke-width: 2; }
+    .zone { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .dark { fill: #031121; }
+    .gast { fill: #1a2f6e; }
+    .weg { fill: none; stroke: #8a5f00; stroke-width: 3; marker-end: url(#arrowg); }
+    .tuer { fill: none; stroke: #fcd430; stroke-width: 5; stroke-dasharray: 10 8; }
+    .gold { fill: #8a5f00; }
+  </style>
+  <defs>
+    <marker id="arrowg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a5f00"/></marker>
+  </defs>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <!-- Gastraum links, verwaist -->
+  <text class="h" x="60" y="70">Vorne: der Gastraum, leer</text>
+
+  <!-- Die Karte, unbenutzt -->
+  <g opacity="0.35">
+    <rect class="box" x="60" y="130" width="330" height="220" rx="6"/>
+    <rect class="dark" x="60" y="130" width="330" height="48" rx="6"/>
+    <text class="l" x="84" y="162" style="fill:#ffffff;font-weight:700">Die Karte</text>
+    <text class="mono" x="84" y="216">einzahlen(betrag)</text>
+    <text class="mono" x="84" y="258">abheben(betrag)</text>
+    <text class="mono" x="84" y="300">getSaldo()</text>
+  </g>
+  <text class="s" x="84" y="384">unbenutzt – bestellt hat diese Woche niemand</text>
+
+  <!-- Tresen mit offener Tür -->
+  <rect class="zone" x="520" y="120" width="90" height="260"/>
+  <text class="h" x="565" y="90" text-anchor="middle">der Tresen</text>
+  <rect class="tuer" x="516" y="392" width="98" height="128"/>
+  <text class="l" x="565" y="545" text-anchor="middle" style="fill:#8a5f00;font-weight:700">die Tür stand offen</text>
+
+  <!-- Weg durch die Tür -->
+  <path class="weg" d="M 240 470 C 380 470, 450 460, 640 452"/>
+  <text class="gold" x="300" y="440" style="font-size:19px">kein Einbruch – nur Zugriff</text>
+
+  <!-- Küche rechts -->
+  <rect class="zone" x="640" y="130" width="500" height="390" rx="8"/>
+  <text class="h" x="670" y="100">Hinten: die Küche, voll</text>
+
+  <!-- Herd -->
+  <rect class="dark" x="700" y="400" width="260" height="90" rx="6"/>
+  <circle cx="760" cy="430" r="18" fill="none" stroke="#5a6472" stroke-width="4"/>
+  <circle cx="830" cy="430" r="18" fill="none" stroke="#5a6472" stroke-width="4"/>
+  <text class="l" x="720" y="475" style="fill:#ffffff">der Herd</text>
+
+  <!-- Topf saldo -->
+  <rect class="box" x="790" y="350" width="120" height="50" rx="4"/>
+  <text class="mono" x="810" y="383">saldo</text>
+
+  <!-- Gäste in der Küche -->
+  <g class="gast">
+    <circle cx="720" cy="250" r="20"/>
+    <rect x="694" y="274" width="52" height="60" rx="16"/>
+    <circle cx="830" cy="230" r="20"/>
+    <rect x="804" y="254" width="52" height="60" rx="16"/>
+    <circle cx="960" cy="260" r="20"/>
+    <rect x="934" y="284" width="52" height="60" rx="16"/>
+  </g>
+  <text class="s" x="700" y="200">alle Gäste stehen am Herd</text>
+</svg>

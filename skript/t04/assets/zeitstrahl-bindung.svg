@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Zeitstrahl der Bindung: Zur Übersetzungszeit entscheidet der Compiler über Überladung, Felder und Aufrufbarkeit – zur Laufzeit entscheidet das Objekt über die Überschreibung</title>
+  <desc id="d">Ein horizontaler Zeitstrahl. Links das helle Feld Übersetzungszeit mit Überladung, Feldern und Aufrufbarkeit nach Regel 1. In der Mitte die Marke javac. Rechts das dunkle Feld Laufzeit mit der Überschreibung nach Regel 2. Was links entschieden wird, steht für immer fest; was rechts entschieden wird, hängt am Objekt.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 28px; font-weight: 700; }
+    .hw { font-size: 28px; font-weight: 700; fill: #ffffff; }
+    .p { font-size: 23px; }
+    .pw { font-size: 23px; fill: #ffffff; }
+    .s { font-size: 19px; fill: #5a6472; }
+    .sw { font-size: 19px; fill: #c7cdd4; }
+    .m { font-size: 21px; font-weight: 700; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; }
+  </style>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <!-- Zeitstrahl -->
+  <line x1="70" y1="440" x2="1090" y2="440" stroke="#031121" stroke-width="5"/>
+  <path d="M 1130 440 L 1088 421 L 1088 459 Z" fill="#031121"/>
+  <text class="s" x="1130" y="480" text-anchor="end">Zeit</text>
+
+  <!-- Uebersetzungszeit -->
+  <g>
+    <rect x="90" y="110" width="440" height="280" rx="16" fill="#e5effb" stroke="#1a2f6e" stroke-width="2.5"/>
+    <text class="h" x="120" y="160">Übersetzungszeit</text>
+    <text class="s" x="120" y="190">der Compiler entscheidet – für immer</text>
+    <text class="p" x="120" y="245">Überladung: Signaturwahl</text>
+    <text class="p" x="120" y="285">Felder: immer statisch</text>
+    <text class="p" x="120" y="325">Aufrufbarkeit (Regel 1)</text>
+    <text class="s" x="120" y="368">Maßstab: der statische Typ, der Zettel</text>
+  </g>
+
+  <!-- Marke javac -->
+  <g>
+    <rect x="565" y="400" width="90" height="80" rx="10" fill="#fcd430"/>
+    <text class="m" x="610" y="447" text-anchor="middle">javac</text>
+    <text class="s" x="610" y="510" text-anchor="middle">die Grenze</text>
+  </g>
+
+  <!-- Laufzeit -->
+  <g>
+    <rect x="690" y="110" width="440" height="280" rx="16" fill="#1a2f6e"/>
+    <text class="hw" x="720" y="160">Laufzeit</text>
+    <text class="sw" x="720" y="190">das Objekt entscheidet – bei jedem Aufruf</text>
+    <text class="pw" x="720" y="245">Überschreibung:</text>
+    <text class="pw" x="720" y="285">es läuft die Fassung</text>
+    <text class="pw" x="720" y="325">der echten Klasse (Regel 2)</text>
+    <text class="sw" x="720" y="368">Maßstab: der dynamische Typ, das Objekt</text>
+  </g>
+
+  <text class="s" x="90" y="60" style="font-size:24px; fill:#031121;">Zwei Schiedsrichter, ein Zeitstrahl – jede Klausurzeile wird genau einem Feld zugeordnet.</text>
+</svg>

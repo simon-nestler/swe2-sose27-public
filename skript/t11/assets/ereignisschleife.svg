@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Die Ereignisschleife aus T10 als Kreis: Ereignis abholen, Handler ausführen, zeichnen (Pulse), nächstes Ereignis – ohne Abzweigung</title>
+  <desc id="d">Vier Stationen im Kreis, verbunden durch Pfeile im Uhrzeigersinn: Ereignis abholen, Handler ausführen (gelb hervorgehoben), zeichnen (Pulse), nächstes Ereignis. In der Mitte steht: ein einziger Arbeiter, JavaFX Application Thread. Der Kreis hat keine Abzweigung – solange der Handler läuft, kommt die Schleife nicht zum Zeichnen.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .knoten { font-size: 24px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .knoten-dunkel { font-size: 24px; font-weight: 700; fill: #031121; text-anchor: middle; }
+    .mitte { font-size: 27px; font-weight: 700; text-anchor: middle; }
+    .mitte-sub { font-size: 21px; fill: #5a6472; text-anchor: middle; }
+  </style>
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5a6472"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="620" fill="#ffffff"/>
+
+  <!-- Pfeile im Uhrzeigersinn -->
+  <g fill="none" stroke="#5a6472" stroke-width="3.5" marker-end="url(#pfeil)">
+    <path d="M 740 128 Q 900 160 925 268"/>
+    <path d="M 925 352 Q 895 465 742 502"/>
+    <path d="M 460 502 Q 305 465 275 352"/>
+    <path d="M 275 268 Q 305 160 460 118"/>
+  </g>
+
+  <!-- Stationen -->
+  <rect x="470" y="68" width="260" height="64" rx="12" fill="#1a2f6e"/>
+  <text class="knoten" x="600" y="108">Ereignis abholen</text>
+
+  <rect x="800" y="278" width="260" height="64" rx="12" fill="#fcd430"/>
+  <text class="knoten-dunkel" x="930" y="318">Handler ausführen</text>
+
+  <rect x="470" y="488" width="260" height="64" rx="12" fill="#1a2f6e"/>
+  <text class="knoten" x="600" y="528">zeichnen (Pulse)</text>
+
+  <rect x="140" y="278" width="260" height="64" rx="12" fill="#1a2f6e"/>
+  <text class="knoten" x="270" y="318">nächstes Ereignis</text>
+
+  <!-- Mitte -->
+  <text class="mitte" x="600" y="300">ein einziger Arbeiter</text>
+  <text class="mitte-sub" x="600" y="334">JavaFX Application Thread</text>
+  <text class="mitte-sub" x="600" y="368">keine Abzweigung, kein Überholen</text>
+</svg>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 640" role="img" aria-labelledby="ze-t ze-d">
+  <title id="ze-t">Gleichmäßiger Baum über zehn Ebenen: 1, 2, 4, 8 … 512 Knoten – Summe 1.023, ein Suchweg markiert</title>
+  <desc id="ze-d">Ein gleichmäßiger Binärbaum, schematisch: die Ebenen 1 bis 4 sind als Kreise gezeichnet, danach deuten gestrichelte Linien die Ebenen bis 10 an, die als breites Band mit 512 Knoten endet. Am linken Rand steht je Ebene die Knotenzahl: 1, 2, 4, 8 bis 512. Ein einzelner Suchweg von der Wurzel bis in das unterste Band ist als dicke goldgelbe Linie markiert. Unten die Summe: 1 plus 2 plus 4 bis 512 gleich 1.023 Knoten.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .ze-l { font-size: 20px; }
+    .ze-s { font-size: 18px; fill: #5a6472; }
+    .ze-g { font-size: 20px; font-weight: 700; fill: #8a5f00; }
+    .ze-k { fill: #e5effb; stroke: #1a2f6e; stroke-width: 2.5; }
+    .ze-e { stroke: #c7cdd4; stroke-width: 2; fill: none; }
+  </style>
+  <rect width="1260" height="640" fill="#ffffff"/>
+
+  <!-- Ebenenbeschriftung -->
+  <text class="ze-s" x="40" y="96">Ebene 1 · 1</text>
+  <text class="ze-s" x="40" y="176">Ebene 2 · 2</text>
+  <text class="ze-s" x="40" y="256">Ebene 3 · 4</text>
+  <text class="ze-s" x="40" y="336">Ebene 4 · 8</text>
+  <text class="ze-s" x="40" y="420">⋮</text>
+  <text class="ze-s" x="40" y="506">Ebene 10 · 512</text>
+
+  <!-- Kanten Ebene 1-4 -->
+  <line class="ze-e" x1="650" y1="90" x2="420" y2="170"/><line class="ze-e" x1="650" y1="90" x2="880" y2="170"/>
+  <line class="ze-e" x1="420" y1="170" x2="305" y2="250"/><line class="ze-e" x1="420" y1="170" x2="535" y2="250"/>
+  <line class="ze-e" x1="880" y1="170" x2="765" y2="250"/><line class="ze-e" x1="880" y1="170" x2="995" y2="250"/>
+  <line class="ze-e" x1="305" y1="250" x2="247" y2="330"/><line class="ze-e" x1="305" y1="250" x2="363" y2="330"/>
+  <line class="ze-e" x1="535" y1="250" x2="477" y2="330"/><line class="ze-e" x1="535" y1="250" x2="593" y2="330"/>
+  <line class="ze-e" x1="765" y1="250" x2="707" y2="330"/><line class="ze-e" x1="765" y1="250" x2="823" y2="330"/>
+  <line class="ze-e" x1="995" y1="250" x2="937" y2="330"/><line class="ze-e" x1="995" y1="250" x2="1053" y2="330"/>
+
+  <!-- Angedeutete Fortsetzung -->
+  <line x1="247" y1="346" x2="200" y2="470" stroke="#c7cdd4" stroke-width="2" stroke-dasharray="4 6"/>
+  <line x1="477" y1="346" x2="450" y2="470" stroke="#c7cdd4" stroke-width="2" stroke-dasharray="4 6"/>
+  <line x1="707" y1="346" x2="700" y2="470" stroke="#c7cdd4" stroke-width="2" stroke-dasharray="4 6"/>
+  <line x1="937" y1="346" x2="980" y2="470" stroke="#c7cdd4" stroke-width="2" stroke-dasharray="4 6"/>
+
+  <!-- Suchweg (Akzent) -->
+  <polyline points="650,90 880,170 765,250 823,330 850,478" fill="none" stroke="#8a5f00" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Knoten Ebene 1-4 -->
+  <circle class="ze-k" cx="650" cy="90" r="20"/>
+  <circle class="ze-k" cx="420" cy="170" r="18"/><circle class="ze-k" cx="880" cy="170" r="18"/>
+  <circle class="ze-k" cx="305" cy="250" r="16"/><circle class="ze-k" cx="535" cy="250" r="16"/><circle class="ze-k" cx="765" cy="250" r="16"/><circle class="ze-k" cx="995" cy="250" r="16"/>
+  <circle class="ze-k" cx="247" cy="330" r="14"/><circle class="ze-k" cx="363" cy="330" r="14"/><circle class="ze-k" cx="477" cy="330" r="14"/><circle class="ze-k" cx="593" cy="330" r="14"/><circle class="ze-k" cx="707" cy="330" r="14"/><circle class="ze-k" cx="823" cy="330" r="14"/><circle class="ze-k" cx="937" cy="330" r="14"/><circle class="ze-k" cx="1053" cy="330" r="14"/>
+
+  <!-- Ebene 10 als Band -->
+  <rect x="180" y="474" width="900" height="44" rx="8" fill="#e5effb" stroke="#c7cdd4" stroke-width="2"/>
+  <g fill="#1a2f6e">
+    <circle cx="210" cy="496" r="4"/><circle cx="240" cy="496" r="4"/><circle cx="270" cy="496" r="4"/><circle cx="300" cy="496" r="4"/><circle cx="330" cy="496" r="4"/><circle cx="360" cy="496" r="4"/><circle cx="390" cy="496" r="4"/><circle cx="420" cy="496" r="4"/><circle cx="450" cy="496" r="4"/><circle cx="480" cy="496" r="4"/><circle cx="510" cy="496" r="4"/><circle cx="540" cy="496" r="4"/><circle cx="570" cy="496" r="4"/><circle cx="600" cy="496" r="4"/><circle cx="630" cy="496" r="4"/><circle cx="660" cy="496" r="4"/><circle cx="690" cy="496" r="4"/><circle cx="720" cy="496" r="4"/><circle cx="750" cy="496" r="4"/><circle cx="780" cy="496" r="4"/><circle cx="810" cy="496" r="4"/><circle cx="882" cy="496" r="4"/><circle cx="912" cy="496" r="4"/><circle cx="942" cy="496" r="4"/><circle cx="972" cy="496" r="4"/><circle cx="1002" cy="496" r="4"/><circle cx="1032" cy="496" r="4"/>
+  </g>
+  <circle cx="850" cy="496" r="8" fill="#8a5f00"/>
+
+  <text class="ze-l" x="180" y="566" style="font-weight:700">1 + 2 + 4 + 8 + … + 512 = 1.023 Knoten</text>
+  <text class="ze-g" x="700" y="566">Suchweg: höchstens 10 Vergleiche</text>
+  <text class="ze-s" x="180" y="606">Jeder Vergleich streicht die Hälfte des Restes.</text>
+</svg>

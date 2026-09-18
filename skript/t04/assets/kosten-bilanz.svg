@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Die Rechnung von vorhin, jetzt mit Häkchen: Ein neuer Typ kostet im switch-Entwurf vier Änderungen an bestehendem Code, im polymorphen Entwurf eine neue Klasse und null Änderungen – belegt am Fall Benachrichtigungsliste</title>
+  <desc id="d">Zwei Felder nebeneinander. Links, hell: switch-Entwurf, ein neuer Typ kostet vier Änderungen an bestehendem, getestetem Code. Rechts, dunkel: polymorpher Entwurf, ein neuer Typ kostet eine neue Klasse und null Änderungen. Am rechten Feld ein Haken im gelben Kreis mit der Beschriftung: belegt am Fall Messenger.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 27px; font-weight: 700; }
+    .hw { font-size: 27px; font-weight: 700; fill: #ffffff; }
+    .z { font-size: 60px; font-weight: 700; }
+    .zw { font-size: 60px; font-weight: 700; fill: #ffffff; }
+    .p { font-size: 22px; }
+    .pw { font-size: 22px; fill: #ffffff; }
+    .s { font-size: 19px; fill: #5a6472; }
+  </style>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <text class="h" x="90" y="70">Was kostet der neue Typ „Messenger“?</text>
+
+  <!-- switch-Entwurf -->
+  <g>
+    <rect x="90" y="110" width="460" height="330" rx="16" fill="#e5effb" stroke="#1a2f6e" stroke-width="2.5"/>
+    <text class="h" x="130" y="170">switch-Entwurf</text>
+    <text class="z" x="130" y="270">4</text>
+    <text class="p" x="185" y="250">Änderungen an bestehendem,</text>
+    <text class="p" x="185" y="282">getestetem Code</text>
+    <text class="s" x="130" y="340">an jeder Verzweigungsstelle</text>
+    <text class="s" x="130" y="370">im Projekt – die Schleife kennt</text>
+    <text class="s" x="130" y="400">jeden einzelnen Typ</text>
+  </g>
+
+  <!-- polymorph -->
+  <g>
+    <rect x="650" y="110" width="460" height="330" rx="16" fill="#1a2f6e"/>
+    <text class="hw" x="690" y="170">polymorph</text>
+    <text class="zw" x="690" y="270">1 + 0</text>
+    <text class="pw" x="880" y="250">eine neue Klasse,</text>
+    <text class="pw" x="880" y="282">null Änderungen</text>
+    <text class="pw" x="690" y="340">Messenger überschreibt senden() –</text>
+    <text class="pw" x="690" y="370">die Versandschleife bleibt</text>
+    <text class="pw" x="690" y="400">unangetastet</text>
+  </g>
+
+  <!-- Haken -->
+  <g>
+    <circle cx="1110" cy="110" r="46" fill="#fcd430"/>
+    <path d="M 1086 110 L 1103 128 L 1136 92" fill="none" stroke="#031121" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text class="s" x="1110" y="185" text-anchor="end" style="font-size:21px; fill:#031121; font-weight:700;">belegt am Fall Messenger</text>
+
+  <text class="s" x="90" y="510">Die Rechnung aus dem Input war keine Behauptung – Ihre Paararbeit hat sie soeben nachgewiesen.</text>
+</svg>

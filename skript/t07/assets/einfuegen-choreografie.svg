@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="t d">
+  <title id="t">Choreografie des Einfügens am Anfang in drei Bildern: neuer Knoten, n.next auf Dom, head auf Zoo umgehängt</title>
+  <desc id="d">Drei Bilder untereinander. Bild 1: Der neue Kasten Zoo schwebt frei links oberhalb der Kette Dom, Hafen, Park; head zeigt noch auf Dom. Bild 2: Der next-Zettel von Zoo bekommt einen dick markierten Pfeil auf Dom. Bild 3: Der head-Zettel wird umgehängt und zeigt dick markiert auf Zoo; der alte Pfeil von head auf Dom ist gestrichelt durchgestrichen.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .cap { font-size: 22px; font-weight: 700; }
+    .wert { font-size: 24px; font-weight: 700; text-anchor: middle; }
+    .feld { font-size: 13px; fill: #5a6472; }
+    .zettel { font-size: 19px; font-weight: 700; text-anchor: middle; }
+    .nullw { font-size: 19px; font-weight: 700; fill: #5a6472; text-anchor: middle; }
+    .badge { font-size: 20px; font-weight: 700; text-anchor: middle; }
+    .box { fill: #ffffff; stroke: #5a6472; stroke-width: 2; }
+    .kopf { fill: #e5effb; stroke: #5a6472; stroke-width: 2; }
+    .pfeil { fill: none; stroke: #5a6472; stroke-width: 2.5; marker-end: url(#pn); }
+    .neu { fill: none; stroke: #3391ff; stroke-width: 5.5; marker-end: url(#pb); }
+    .alt { fill: none; stroke: #c7cdd4; stroke-width: 2.5; stroke-dasharray: 8 6; marker-end: url(#pa); }
+    .strich { stroke: #5a6472; stroke-width: 2.5; }
+  </style>
+  <defs>
+    <marker id="pn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5a6472"/></marker>
+    <marker id="pb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+    <marker id="pa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#c7cdd4"/></marker>
+    <g id="kette">
+      <!-- Dom -->
+      <rect class="kopf" x="420" y="140" width="150" height="50"/>
+      <rect class="box" x="420" y="190" width="150" height="40"/>
+      <text class="wert" x="495" y="174">Dom</text>
+      <text class="feld" x="428" y="204">next</text>
+      <path class="pfeil" d="M540,210 L648,210"/>
+      <!-- Hafen -->
+      <rect class="kopf" x="650" y="140" width="150" height="50"/>
+      <rect class="box" x="650" y="190" width="150" height="40"/>
+      <text class="wert" x="725" y="174">Hafen</text>
+      <text class="feld" x="658" y="204">next</text>
+      <path class="pfeil" d="M770,210 L878,210"/>
+      <!-- Park -->
+      <rect class="kopf" x="880" y="140" width="150" height="50"/>
+      <rect class="box" x="880" y="190" width="150" height="40"/>
+      <text class="wert" x="955" y="174">Park</text>
+      <text class="feld" x="888" y="204">next</text>
+      <text class="nullw" x="965" y="218">null</text>
+    </g>
+    <g id="zoo">
+      <rect class="kopf" x="180" y="40" width="150" height="50"/>
+      <rect class="box" x="180" y="90" width="150" height="40"/>
+      <text class="wert" x="255" y="74">Zoo</text>
+      <text class="feld" x="188" y="104">next</text>
+    </g>
+    <g id="headz">
+      <rect class="box" x="40" y="150" width="90" height="48" rx="5"/>
+      <text class="zettel" x="85" y="181">head</text>
+    </g>
+  </defs>
+  <rect width="1200" height="860" fill="#ffffff"/>
+
+  <!-- Bild 1 -->
+  <g transform="translate(0,10)">
+    <circle cx="58" cy="18" r="18" fill="#fcd430"/><text class="badge" x="58" y="25">1</text>
+    <text class="cap" x="90" y="25">Node n = new Node("Zoo") – der neue Kasten schwebt frei</text>
+    <use href="#zoo"/>
+    <use href="#kette"/>
+    <use href="#headz"/>
+    <path class="pfeil" d="M130,174 L418,167"/>
+  </g>
+
+  <!-- Bild 2 -->
+  <g transform="translate(0,300)">
+    <circle cx="58" cy="18" r="18" fill="#fcd430"/><text class="badge" x="58" y="25">2</text>
+    <text class="cap" x="90" y="25">n.next = head – der next-Zettel von Zoo zeigt auf Dom</text>
+    <use href="#zoo"/>
+    <use href="#kette"/>
+    <use href="#headz"/>
+    <path class="pfeil" d="M130,174 L418,167"/>
+    <path class="neu" d="M330,110 L412,142"/>
+  </g>
+
+  <!-- Bild 3 -->
+  <g transform="translate(0,590)">
+    <circle cx="58" cy="18" r="18" fill="#fcd430"/><text class="badge" x="58" y="25">3</text>
+    <text class="cap" x="90" y="25">head = n – der head-Zettel wird umgehängt, der alte Pfeil gilt nicht mehr</text>
+    <use href="#zoo"/>
+    <use href="#kette"/>
+    <use href="#headz"/>
+    <path class="alt" d="M130,182 L418,182"/>
+    <line class="strich" x1="262" y1="164" x2="290" y2="200"/>
+    <path class="neu" d="M85,148 L85,120 L172,112"/>
+    <path class="pfeil" d="M330,110 L412,142"/>
+  </g>
+</svg>

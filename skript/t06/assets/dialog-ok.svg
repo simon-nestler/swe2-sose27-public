@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Der Standardfall: ein Dialogfenster mit dem Titel Fehler, dem rohen Exception-Text und einem einzigen Knopf OK</title>
+  <desc id="d">Nachgebautes Dialogfenster. Titelzeile: Fehler. Im Fenster steht der rohe Text java.io.FileNotFoundException: urlaub/strand.jpg (No such file or directory), daneben ein gelbes Warndreieck. Unten rechts ein Knopf mit der Aufschrift OK. Technisch wahr, menschlich leer.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .t { font-size: 22px; font-weight: 600; }
+    .m { font-size: 22px; font-family: ui-monospace, Menlo, Consolas, monospace; }
+    .b { font-size: 22px; text-anchor: middle; }
+    .win { fill: #ffffff; stroke: #5a6472; stroke-width: 2; }
+    .bar { fill: #e5effb; stroke: #5a6472; stroke-width: 2; }
+    .btn { fill: #f3f3f3; stroke: #5a6472; stroke-width: 2; }
+  </style>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <rect class="win" x="220" y="110" width="760" height="330"/>
+  <rect class="bar" x="220" y="110" width="760" height="52"/>
+  <text class="t" x="252" y="144">Fehler</text>
+  <circle cx="944" cy="136" r="10" fill="none" stroke="#5a6472" stroke-width="2"/>
+
+  <!-- Warndreieck -->
+  <path d="M290,240 L250,310 L330,310 Z" fill="#fcd430" stroke="#031121" stroke-width="2"/>
+  <text x="290" y="300" font-size="38" font-weight="700" text-anchor="middle">!</text>
+
+  <text class="m" x="350" y="242">java.io.FileNotFoundException:</text>
+  <text class="m" x="350" y="280">urlaub/strand.jpg (No such file</text>
+  <text class="m" x="350" y="318">or directory)</text>
+
+  <rect class="btn" x="830" y="370" width="120" height="48"/>
+  <text class="b" x="890" y="401">OK</text>
+</svg>

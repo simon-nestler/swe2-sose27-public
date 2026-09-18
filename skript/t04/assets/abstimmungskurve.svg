@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Abstimmungskurve der drei Peer-Instruction-Fragen: Anteil richtiger Antworten fällt von Frage 1 zu Frage 3 – erwartetes Muster, wird durch die echten Moodle-Zahlen ersetzt</title>
+  <desc id="d">Balkendiagramm mit drei Fragenpaaren. Je Frage ein dunkelblauer Balken für richtige und ein grauer Balken für falsche Antworten. Frage 1 zur Überschreibung: etwa 75 Prozent richtig. Frage 2 zur Überladung: etwa 45 Prozent richtig. Frage 3 zur Feldbindung: etwa 30 Prozent richtig, der Falsch-Balken ist gelb hervorgehoben.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 26px; font-weight: 700; }
+    .v { font-size: 22px; font-weight: 700; text-anchor: middle; }
+    .x { font-size: 21px; text-anchor: middle; }
+    .u { font-size: 18px; fill: #5a6472; text-anchor: middle; }
+    .q { font-size: 18px; fill: #5a6472; }
+    .r { fill: #1a2f6e; }
+    .f { fill: #c7cdd4; }
+    .grid { stroke: #c7cdd4; stroke-width: 1; }
+  </style>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <text class="h" x="60" y="52">Anteil richtiger Antworten je Frage</text>
+  <text class="q" x="60" y="82">erwartetes Muster · in Prozent · ersetzt durch die echten Moodle-Zahlen der Sitzung</text>
+
+  <line class="grid" x1="60" y1="440" x2="1140" y2="440"/>
+  <line class="grid" x1="60" y1="140" x2="1140" y2="140" stroke-dasharray="4 6"/>
+  <text class="q" x="1140" y="132" text-anchor="end">100 %</text>
+
+  <!-- Frage 1: 75 richtig / 25 falsch -->
+  <g>
+    <rect class="r" x="140" y="215" width="90" height="225"/>
+    <text class="v" x="185" y="205">75</text>
+    <text class="u" x="185" y="468">richtig</text>
+    <rect class="f" x="250" y="365" width="90" height="75"/>
+    <text class="v" x="295" y="355">25</text>
+    <text class="u" x="295" y="468">falsch</text>
+    <text class="x" x="240" y="505">Frage 1 · Überschreibung</text>
+  </g>
+
+  <!-- Frage 2: 45 richtig / 55 falsch -->
+  <g>
+    <rect class="r" x="500" y="305" width="90" height="135"/>
+    <text class="v" x="545" y="295">45</text>
+    <text class="u" x="545" y="468">richtig</text>
+    <rect class="f" x="610" y="275" width="90" height="165"/>
+    <text class="v" x="655" y="265">55</text>
+    <text class="u" x="655" y="468">falsch</text>
+    <text class="x" x="600" y="505">Frage 2 · Überladung</text>
+  </g>
+
+  <!-- Frage 3: 30 richtig / 70 falsch, Falsch-Balken als Akzent -->
+  <g>
+    <rect class="r" x="860" y="350" width="90" height="90"/>
+    <text class="v" x="905" y="340">30</text>
+    <text class="u" x="905" y="468">richtig</text>
+    <rect x="970" y="230" width="90" height="210" fill="#fcd430"/>
+    <text class="v" x="1015" y="220">70</text>
+    <text class="u" x="1015" y="468">falsch</text>
+    <text class="x" x="960" y="505">Frage 3 · Feldbindung</text>
+  </g>
+
+  <text class="q" x="60" y="545">Die Kurve war einkalkuliert: Genau zwischen Frage 1 und Frage 3 verläuft die Grenze zwischen Können und Vermuten.</text>
+</svg>

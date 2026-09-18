@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Abstimmungskurve der Peer Instruction: Frage 1 und Frage 2, jeweils erste und zweite Abstimmung, Anteil richtiger Antworten in Prozent – schematisches Muster, die echten Werte liefert die Moodle-Abstimmung</title>
+  <desc id="d">Vier Balken. Frage 1: erste Abstimmung etwa 75 Prozent richtig, zweite etwa 85 Prozent – die Frage saß. Frage 2: erste Abstimmung etwa 40 Prozent, zweite etwa 55 Prozent – hier kippt der Raum. Werte schematisch als erwartetes Muster.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 26px; font-weight: 700; }
+    .q { font-size: 18px; fill: #5a6472; }
+    .v { font-size: 22px; font-weight: 700; text-anchor: middle; }
+    .g { font-size: 19px; fill: #031121; font-weight: 600; text-anchor: middle; }
+    .ax { font-size: 17px; fill: #5a6472; text-anchor: end; }
+    .b1 { fill: #e5effb; stroke: #1a2f6e; stroke-width: 2; }
+    .b2 { fill: #1a2f6e; }
+    .grid { stroke: #c7cdd4; stroke-width: 1; }
+  </style>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <text class="h" x="40" y="48">Richtig geantwortet, in Prozent</text>
+  <text class="q" x="40" y="78">erste und zweite Abstimmung je Frage · schematisches Muster</text>
+
+  <rect x="880" y="34" width="20" height="20" fill="#e5effb" stroke="#1a2f6e" stroke-width="2"/>
+  <text class="q" x="908" y="50">1. Abstimmung</text>
+  <rect x="880" y="66" width="20" height="20" fill="#1a2f6e"/>
+  <text class="q" x="908" y="82">2. Abstimmung</text>
+
+  <line class="grid" x1="90" y1="140" x2="1120" y2="140" stroke-dasharray="4 6"/>
+  <line class="grid" x1="90" y1="290" x2="1120" y2="290" stroke-dasharray="4 6"/>
+  <line class="grid" x1="90" y1="440" x2="1120" y2="440"/>
+  <text class="ax" x="82" y="146">100 %</text>
+  <text class="ax" x="82" y="296">50 %</text>
+  <text class="ax" x="82" y="446">0 %</text>
+
+  <g>
+    <rect class="b1" x="230" y="215" width="90" height="225"/><text class="v" x="275" y="205">≈ 75</text>
+    <rect class="b2" x="350" y="185" width="90" height="255"/><text class="v" x="395" y="175">≈ 85</text>
+    <text class="g" x="335" y="482">Frage 1 · Bauplan und Haus</text>
+  </g>
+
+  <g>
+    <rect class="b1" x="690" y="320" width="90" height="120"/><text class="v" x="735" y="310">≈ 40</text>
+    <rect class="b2" x="810" y="275" width="90" height="165"/><text class="v" x="855" y="265">≈ 55</text>
+    <text class="g" x="795" y="482">Frage 2 · zwei Zettel, ein Objekt</text>
+    <rect x="705" y="492" width="180" height="6" fill="#fcd430"/>
+    <text class="g" x="795" y="522">hier kippt der Raum</text>
+  </g>
+
+  <text class="q" x="90" y="522">Erwartetes Muster – die echten Prozentwerte entstehen am Termin in der Moodle-Abstimmung.</text>
+</svg>

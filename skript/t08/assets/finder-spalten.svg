@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 620" role="img" aria-labelledby="fs-t fs-d">
+  <title id="fs-t">Finder-Fenster in Spaltenansicht: Ordner enthalten Ordner enthalten Ordner, fünf Ebenen tief</title>
+  <desc id="fs-d">Ein Dateimanager-Fenster mit fünf Spalten. Der Pfad läuft von Dokumente über hochschule, Lehre und Foliensätze bis SWE2. Jede Spalte enthält Dateien und weitere Ordner; der jeweils geöffnete Ordner ist hell markiert. Die letzte Spalte endet mit drei Punkten – wie tief es weitergeht, weiß niemand vorher.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .fs-l { font-size: 20px; }
+    .fs-s { font-size: 17px; fill: #5a6472; }
+    .fs-b { font-size: 20px; font-weight: 700; }
+  </style>
+  <defs>
+    <g id="fs-folder"><rect x="0" y="2" width="11" height="6" rx="1.5" fill="#9aa1aa"/><rect x="0" y="6" width="24" height="14" rx="2" fill="#9aa1aa"/></g>
+    <g id="fs-file"><rect x="3" y="0" width="17" height="22" rx="2" fill="#ffffff" stroke="#9aa1aa" stroke-width="2"/><line x1="7" y1="7" x2="16" y2="7" stroke="#9aa1aa" stroke-width="2"/><line x1="7" y1="12" x2="16" y2="12" stroke="#9aa1aa" stroke-width="2"/><line x1="7" y1="17" x2="13" y2="17" stroke="#9aa1aa" stroke-width="2"/></g>
+  </defs>
+  <rect width="1260" height="620" fill="#ffffff"/>
+
+  <!-- Fensterrahmen -->
+  <rect x="60" y="60" width="1140" height="490" rx="10" fill="#ffffff" stroke="#c7cdd4" stroke-width="2"/>
+  <rect x="60" y="60" width="1140" height="44" rx="10" fill="#f5f3ee" stroke="#c7cdd4" stroke-width="2"/>
+  <rect x="62" y="84" width="1136" height="20" fill="#f5f3ee"/>
+  <circle cx="88" cy="82" r="7" fill="#c7cdd4"/><circle cx="112" cy="82" r="7" fill="#c7cdd4"/><circle cx="136" cy="82" r="7" fill="#c7cdd4"/>
+  <text class="fs-s" x="630" y="89" text-anchor="middle">Dokumente – Spaltenansicht</text>
+
+  <!-- Spaltentrenner -->
+  <line x1="288" y1="104" x2="288" y2="502" stroke="#c7cdd4" stroke-width="2"/>
+  <line x1="516" y1="104" x2="516" y2="502" stroke="#c7cdd4" stroke-width="2"/>
+  <line x1="744" y1="104" x2="744" y2="502" stroke="#c7cdd4" stroke-width="2"/>
+  <line x1="972" y1="104" x2="972" y2="502" stroke="#c7cdd4" stroke-width="2"/>
+
+  <!-- Spalte 1: Dokumente -->
+  <text class="fs-s" x="76" y="132">Dokumente</text>
+  <use href="#fs-folder" x="76" y="150"/><text class="fs-l" x="112" y="167">Fotos</text>
+  <rect x="68" y="188" width="212" height="36" rx="6" fill="#e5effb"/>
+  <use href="#fs-folder" x="76" y="194"/><text class="fs-b" x="112" y="211">hochschule</text><text class="fs-b" x="262" y="211">›</text>
+  <use href="#fs-file" x="76" y="238"/><text class="fs-l" x="112" y="255">Notizen.txt</text>
+  <use href="#fs-folder" x="76" y="282"/><text class="fs-l" x="112" y="299">Steuer</text>
+
+  <!-- Spalte 2: hochschule -->
+  <text class="fs-s" x="304" y="132">hochschule</text>
+  <use href="#fs-folder" x="304" y="150"/><text class="fs-l" x="340" y="167">Abschlussarbeiten</text>
+  <use href="#fs-folder" x="304" y="194"/><text class="fs-l" x="340" y="211">Gremien</text>
+  <rect x="296" y="232" width="212" height="36" rx="6" fill="#e5effb"/>
+  <use href="#fs-folder" x="304" y="238"/><text class="fs-b" x="340" y="255">Lehre</text><text class="fs-b" x="490" y="255">›</text>
+  <use href="#fs-file" x="304" y="282"/><text class="fs-l" x="340" y="299">Orga.md</text>
+
+  <!-- Spalte 3: Lehre -->
+  <text class="fs-s" x="532" y="132">Lehre</text>
+  <rect x="524" y="144" width="212" height="36" rx="6" fill="#e5effb"/>
+  <use href="#fs-folder" x="532" y="150"/><text class="fs-b" x="568" y="167">Foliensätze</text><text class="fs-b" x="718" y="167">›</text>
+  <use href="#fs-folder" x="532" y="194"/><text class="fs-l" x="568" y="211">Klausuren</text>
+  <use href="#fs-file" x="532" y="238"/><text class="fs-l" x="568" y="255">Termine.md</text>
+
+  <!-- Spalte 4: Foliensätze -->
+  <text class="fs-s" x="760" y="132">Foliensätze</text>
+  <use href="#fs-folder" x="760" y="150"/><text class="fs-l" x="796" y="167">BFI</text>
+  <use href="#fs-file" x="760" y="194"/><text class="fs-l" x="796" y="211">README.md</text>
+  <rect x="752" y="232" width="212" height="36" rx="6" fill="#e5effb"/>
+  <use href="#fs-folder" x="760" y="238"/><text class="fs-b" x="796" y="255">SWE2</text><text class="fs-b" x="946" y="255">›</text>
+  <use href="#fs-folder" x="760" y="282"/><text class="fs-l" x="796" y="299">TMI</text>
+
+  <!-- Spalte 5: SWE2 -->
+  <text class="fs-s" x="988" y="132">SWE2</text>
+  <use href="#fs-folder" x="988" y="150"/><text class="fs-l" x="1024" y="167">folien</text>
+  <use href="#fs-folder" x="988" y="194"/><text class="fs-l" x="1024" y="211">vorlesung</text>
+  <use href="#fs-file" x="988" y="238"/><text class="fs-l" x="1024" y="255">notizen.md</text>
+  <text class="fs-b" x="1024" y="299">…</text>
+
+  <!-- Pfadleiste -->
+  <line x1="62" y1="502" x2="1198" y2="502" stroke="#c7cdd4" stroke-width="2"/>
+  <text class="fs-s" x="76" y="530">Dokumente  ›  hochschule  ›  Lehre  ›  Foliensätze  ›  SWE2  ›  …</text>
+
+  <text class="fs-s" x="76" y="596">Jede Spalte enthält Dateien und weitere Ordner – und niemand weiß vorher, wie tief.</text>
+</svg>

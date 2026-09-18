@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Schema der Abstimmungskurve: Anteil richtiger Antworten vor und nach dem Nachbargespräch, Frage 1 steigt deutlich, Frage 2 kaum</title>
+  <desc id="d">Zwei Balkenpaare. Frage 1: Der Anteil richtiger Antworten steigt vom ersten zum zweiten Durchgang deutlich, der Zuwachs ist gelb markiert. Frage 2: Der Anteil steigt nur wenig. Schema mit typischem Verlauf, die echten Zahlen liefert die Moodle-Abstimmung.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 26px; font-weight: 700; }
+    .u { font-size: 18px; fill: #5a6472; }
+    .x { font-size: 20px; fill: #5a6472; text-anchor: middle; }
+    .vor { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .nach { fill: #1a2f6e; }
+    .plus { fill: #fcd430; }
+    .grid { stroke: #c7cdd4; stroke-width: 1; }
+  </style>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <text class="h" x="60" y="52">Anteil richtig – vor und nach dem Nachbargespräch</text>
+  <text class="u" x="60" y="84">Schema · typischer Verlauf – die echten Zahlen liefert die Moodle-Abstimmung</text>
+
+  <!-- Frage 1 -->
+  <text class="h" x="150" y="150" font-size="22">Frage 1</text>
+  <line class="grid" x1="120" y1="470" x2="520" y2="470"/>
+  <line class="grid" x1="120" y1="170" x2="520" y2="170" stroke-dasharray="4 6"/>
+  <rect class="vor" x="160" y="335" width="110" height="135"/>
+  <text class="x" x="215" y="502">vor</text>
+  <rect class="nach" x="330" y="224" width="110" height="246"/>
+  <rect class="plus" x="330" y="224" width="110" height="14"/>
+  <text class="x" x="385" y="502">nach</text>
+
+  <!-- Frage 2 -->
+  <text class="h" x="710" y="150" font-size="22">Frage 2</text>
+  <line class="grid" x1="680" y1="470" x2="1080" y2="470"/>
+  <line class="grid" x1="680" y1="170" x2="1080" y2="170" stroke-dasharray="4 6"/>
+  <rect class="vor" x="720" y="356" width="110" height="114"/>
+  <text class="x" x="775" y="502">vor</text>
+  <rect class="nach" x="890" y="332" width="110" height="138"/>
+  <rect class="plus" x="890" y="332" width="110" height="14"/>
+  <text class="x" x="945" y="502">nach</text>
+
+  <text class="u" x="120" y="545">Frage 1 steigt deutlich – erschließbar im Gespräch. Frage 2 kaum – finally bei return muss man wissen.</text>
+</svg>

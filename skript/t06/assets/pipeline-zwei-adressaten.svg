@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 600" role="img" aria-labelledby="t d">
+  <title id="t">Pipeline: throw, Aufrufstapel, catch an der Oberfläche – dann die Verzweigung in Log für die Entwicklung und Dialog für den Menschen</title>
+  <desc id="d">Flussdiagramm. Links wirft throw eine Exception, sie läuft über den Aufrufstapel zum catch an der Oberfläche. Vom catch gehen zwei Pfeile aus: links in ein dunkles Log mit Klasse, Nachricht, Stapel und Zeitpunkt, Adressat Entwicklung; rechts in ein Dialogfenster mit den drei Fragen, Adressat Mensch.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 21px; font-weight: 700; }
+    .m { font-size: 20px; font-family: ui-monospace, Menlo, Consolas, monospace; }
+    .s { font-size: 17px; fill: #5a6472; }
+    .lbl { font-size: 17px; font-weight: 600; letter-spacing: 0.14em; fill: #5a6472; }
+    .box { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .catch { fill: #ffffff; stroke: #1a2f6e; stroke-width: 3; }
+    .log { fill: #05111f; }
+    .logline { font-size: 17px; font-family: ui-monospace, Menlo, Consolas, monospace; fill: #9aa1aa; }
+    .dlg { fill: #ffffff; stroke: #c7cdd4; stroke-width: 2; }
+    .weg { fill: none; stroke: #3391ff; stroke-width: 4; marker-end: url(#pfeil); }
+  </style>
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+  </defs>
+  <rect width="1240" height="600" fill="#ffffff"/>
+
+  <!-- throw -->
+  <rect class="box" x="60" y="120" width="170" height="64"/>
+  <text class="m" x="100" y="160">throw</text>
+
+  <!-- Aufrufstapel -->
+  <rect class="box" x="330" y="70" width="200" height="46"/>
+  <rect class="box" x="330" y="128" width="200" height="46"/>
+  <rect class="box" x="330" y="186" width="200" height="46"/>
+  <text class="s" x="342" y="262">der Aufrufstapel, rückwärts</text>
+
+  <!-- catch -->
+  <rect class="catch" x="640" y="112" width="300" height="80"/>
+  <rect x="640" y="112" width="10" height="80" fill="#fcd430"/>
+  <text class="m" x="674" y="146">catch</text>
+  <text class="s" x="674" y="176">an der Oberfläche – Teil A</text>
+
+  <path class="weg" d="M230,152 L322,152"/>
+  <path class="weg" d="M530,152 L632,152"/>
+
+  <!-- Verzweigung -->
+  <path class="weg" d="M740,192 L740,250 L660,330"/>
+  <path class="weg" d="M840,192 L840,250 L920,330"/>
+
+  <!-- Log -->
+  <text class="lbl" x="520" y="322">ADRESSAT: ENTWICKLUNG</text>
+  <rect class="log" x="500" y="340" width="340" height="190"/>
+  <text class="h" x="524" y="378" fill="#ffffff">Log – technisch, vollständig</text>
+  <text class="logline" x="524" y="412">Klasse · Nachricht</text>
+  <text class="logline" x="524" y="440">Stapel · Zeitpunkt</text>
+  <text class="logline" x="524" y="468">WARNING: Bild nicht gefunden</text>
+
+  <!-- Dialog -->
+  <text class="lbl" x="884" y="322">ADRESSAT: MENSCH</text>
+  <rect class="dlg" x="880" y="340" width="340" height="190"/>
+  <rect x="880" y="340" width="340" height="40" fill="#e5effb"/>
+  <text class="h" x="904" y="368">Dialog – handlungsfähig</text>
+  <text class="s" x="904" y="416">Was ist passiert?</text>
+  <text class="s" x="904" y="446">Was heißt das für mich?</text>
+  <text class="s" x="904" y="476">Was kann ich jetzt tun?</text>
+</svg>

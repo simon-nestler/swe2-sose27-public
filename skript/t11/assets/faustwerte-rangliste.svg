@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Faustwerte der Reaktionszeit – 0,1 Sekunden, 1 Sekunde, 10 Sekunden – und darunter: gemessen gegen gefühlt</title>
+  <desc id="d">Oben eine Zeitskala mit drei Schwellen: 0,1 Sekunden (fühlt sich direkt an), 1 Sekunde (der Gedankenfluss bleibt), 10 Sekunden (die Aufmerksamkeit geht). Die Zonen dazwischen: keine Rückmeldung nötig, Cursor reicht, Rückmeldung wird Pflicht, Fortschritt und Abbruch. Unten der Befund gemessen gegen gefühlt: 4 Sekunden ohne Anzeige fühlen sich endlos an, 10 Sekunden mit Fortschrittsbalken (gelb) fühlen sich kürzer an.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .schwelle { font-size: 30px; font-weight: 700; text-anchor: middle; }
+    .gefuehl { font-size: 20px; fill: #5a6472; text-anchor: middle; }
+    .zone { font-size: 19px; font-style: italic; fill: #5a6472; text-anchor: middle; }
+    .h { font-size: 24px; font-weight: 700; }
+    .zeile { font-size: 21px; }
+    .fazit { font-size: 21px; font-weight: 700; }
+  </style>
+  <rect width="1200" height="620" fill="#ffffff"/>
+
+  <!-- Skala -->
+  <line x1="80" y1="180" x2="1120" y2="180" stroke="#c7cdd4" stroke-width="2"/>
+  <g stroke="#031121" stroke-width="3">
+    <line x1="350" y1="166" x2="350" y2="194"/>
+    <line x1="660" y1="166" x2="660" y2="194"/>
+    <line x1="970" y1="166" x2="970" y2="194"/>
+  </g>
+  <text class="schwelle" x="350" y="120">0,1 s</text>
+  <text class="gefuehl" x="350" y="150">fühlt sich direkt an</text>
+  <text class="schwelle" x="660" y="120">1 s</text>
+  <text class="gefuehl" x="660" y="150">der Gedankenfluss bleibt</text>
+  <text class="schwelle" x="970" y="120">10 s</text>
+  <text class="gefuehl" x="970" y="150">die Aufmerksamkeit geht</text>
+
+  <text class="zone" x="215" y="222">keine Rückmeldung nötig</text>
+  <text class="zone" x="505" y="222">Cursor reicht</text>
+  <text class="zone" x="815" y="222">Rückmeldung wird Pflicht</text>
+  <text class="zone" x="1045" y="222">Fortschritt und Abbruch</text>
+
+  <!-- gemessen gegen gefühlt -->
+  <text class="h" x="80" y="330">gemessen gegen gefühlt</text>
+
+  <text class="zeile" x="80" y="392">4 s · keine Anzeige</text>
+  <rect x="380" y="368" width="146" height="40" fill="#1a2f6e"/>
+  <text class="zeile" x="560" y="396" fill="#5a6472">gefühlt: endlos</text>
+
+  <text class="zeile" x="80" y="472">10 s · Fortschrittsbalken</text>
+  <rect x="380" y="448" width="364" height="40" fill="#1a2f6e"/>
+  <rect x="384" y="452" width="210" height="32" fill="#fcd430"/>
+  <text class="zeile" x="778" y="476" fill="#5a6472">gefühlt: kürzer</text>
+
+  <text class="fazit" x="80" y="556">Die gefühlte Zeit folgt der Rückmeldung, nicht der gemessenen Dauer.</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 600" role="img" aria-labelledby="t d">
+  <title id="t">Schema: die Theke aus T02 – vorn die Karte List, hinten die Küchen ArrayList und LinkedList</title>
+  <desc id="d">Die Zeile List&lt;String&gt; namen = new ArrayList&lt;&gt;(); steht oben. Links des Gleichheitszeichens ist die Karte markiert, rechts die Küche. Darunter das Thekenbild: Hinter der Theke stehen die beiden Küchen ArrayList und LinkedList, ein gelber Doppelpfeil zwischen ihnen bedeutet: Küche wechseln ist eine Zeile. Vor der Theke liegt die Karte List mit den Vertragsmethoden add, get, contains und sort. Der eigene Code bestellt nur, was auf der Karte steht.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .code { font-family: "JetBrains Mono", Menlo, Consolas, monospace; }
+    .h { font-size: 26px; font-weight: 700; }
+    .l { font-size: 19px; }
+    .s { font-size: 17px; fill: #5a6472; }
+    .box { fill: #ffffff; stroke: #c7cdd4; stroke-width: 2; }
+    .karte { fill: #f5f3ee; stroke: #c7cdd4; stroke-width: 2; }
+    .theke { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .blau { fill: #1a2f6e; }
+    .gold { fill: #8a5f00; }
+    .dash { fill: none; stroke: #c7cdd4; stroke-width: 2; stroke-dasharray: 4 5; }
+  </style>
+  <defs>
+    <marker id="pfeilblau" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a2f6e"/></marker>
+    <marker id="pfeilgold" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ebb52c"/></marker>
+  </defs>
+  <rect width="1260" height="600" fill="#ffffff"/>
+
+  <!-- Die eine Zeile -->
+  <text class="code" x="240" y="52" font-size="24">List&lt;String&gt; namen</text>
+  <text class="code" x="513" y="52" font-size="24">=</text>
+  <text class="code" x="541" y="52" font-size="24">new ArrayList&lt;&gt;();</text>
+  <rect x="240" y="62" width="259" height="4" fill="#1a2f6e"/>
+  <rect x="541" y="62" width="259" height="4" fill="#ebb52c"/>
+  <text class="l blau" x="369" y="90" text-anchor="middle" font-weight="700">die Karte – der Vertrag</text>
+  <text class="l gold" x="670" y="90" text-anchor="middle" font-weight="700">die Küche – austauschbar</text>
+
+  <!-- Küchen hinter der Theke -->
+  <text class="s" x="120" y="122">hinter der Theke: die Küchen</text>
+  <rect class="box" x="180" y="130" width="330" height="130"/>
+  <text class="h" x="345" y="175" text-anchor="middle">ArrayList</text>
+  <text class="s" x="345" y="205" text-anchor="middle">Array innen –</text>
+  <text class="s" x="345" y="229" text-anchor="middle">Zugriff per Index konstant</text>
+  <rect class="box" x="750" y="130" width="330" height="130"/>
+  <text class="h" x="915" y="175" text-anchor="middle">LinkedList</text>
+  <text class="s" x="915" y="205" text-anchor="middle">Knoten innen –</text>
+  <text class="s" x="915" y="229" text-anchor="middle">die Bauform aus T07</text>
+
+  <!-- Wechselpfeil, Gelb als Akzent -->
+  <line x1="532" y1="196" x2="728" y2="196" stroke="#ebb52c" stroke-width="5" marker-start="url(#pfeilgold)" marker-end="url(#pfeilgold)"/>
+  <text class="l gold" x="630" y="178" text-anchor="middle" font-weight="700">Küche wechseln: eine Zeile</text>
+  <text class="s" x="630" y="226" text-anchor="middle">wenn alle Aufrufe über die Karte gehen</text>
+
+  <!-- Theke -->
+  <line class="dash" x1="345" y1="260" x2="345" y2="292"/>
+  <line class="dash" x1="915" y1="260" x2="915" y2="292"/>
+  <rect class="theke" x="120" y="292" width="1020" height="22"/>
+  <text class="s" x="1140" y="336" text-anchor="end">die Theke aus T02</text>
+
+  <!-- Karte vor der Theke -->
+  <line class="dash" x1="630" y1="314" x2="630" y2="344"/>
+  <rect class="karte" x="450" y="344" width="360" height="210"/>
+  <text class="h" x="630" y="384" text-anchor="middle">List</text>
+  <text class="s" x="630" y="408" text-anchor="middle">die Karte – das Interface</text>
+  <text class="code" x="478" y="440" font-size="15">boolean add(E e)</text>
+  <text class="code" x="478" y="466" font-size="15">E get(int index)</text>
+  <text class="code" x="478" y="492" font-size="15">boolean contains(Object o)</text>
+  <text class="code" x="478" y="518" font-size="15">void sort(Comparator&lt;? super E&gt; c)</text>
+
+  <!-- Ihr Code -->
+  <text class="l" x="110" y="430">Ihr Code bestellt nur,</text>
+  <text class="l" x="110" y="458">was auf der Karte steht.</text>
+  <line x1="330" y1="446" x2="442" y2="446" stroke="#1a2f6e" stroke-width="3" stroke-dasharray="7 6" marker-end="url(#pfeilblau)"/>
+</svg>

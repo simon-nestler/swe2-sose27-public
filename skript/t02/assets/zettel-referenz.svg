@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">private schützt das Feld, nicht das Objekt: Die Kopie des Referenz-Zettels zeigt auf dieselbe Liste – der Pfeil führt aus der Küche nach draußen</title>
+  <desc id="d">Links die Küche der Klasse Warenkorb. In einer Schublade liegt der Zettel des privaten Feldes artikel, ein Pfeil führt von ihm zur Liste in der Küche. Rechts steht der Aufrufer mit einer Kopie des Zettels, die getArtikel herausgereicht hat. Von der Kopie führt ein Pfeil zurück in die Küche auf dieselbe Liste, beschriftet mit clear, am Tresen vorbei.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 26px; font-weight: 700; }
+    .l { font-size: 20px; }
+    .s { font-size: 18px; fill: #5a6472; }
+    .mono { font-family: "SF Mono", "Cascadia Code", Consolas, Menlo, monospace; font-size: 19px; }
+    .box { fill: #ffffff; stroke: #c7cdd4; stroke-width: 2; }
+    .zone { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .zettel { fill: #ffffff; stroke: #5a6472; stroke-width: 2; }
+    .kopie { fill: #ffffff; stroke: #fcd430; stroke-width: 4; }
+    .ref { fill: none; stroke: #3391ff; stroke-width: 3; marker-end: url(#arrowb); }
+    .raus { fill: none; stroke: #3391ff; stroke-width: 3; stroke-dasharray: 8 6; marker-end: url(#arrowb); }
+    .angriff { fill: none; stroke: #8a5f00; stroke-width: 3; marker-end: url(#arrowg); }
+    .gold { fill: #8a5f00; font-size: 19px; }
+  </style>
+  <defs>
+    <marker id="arrowb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+    <marker id="arrowg" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a5f00"/></marker>
+  </defs>
+  <rect width="1200" height="560" fill="#ffffff"/>
+
+  <!-- Küche der Klasse -->
+  <rect class="zone" x="50" y="110" width="600" height="400" rx="8"/>
+  <text class="h" x="70" y="80">Warenkorb – die Küche</text>
+
+  <!-- Schublade mit Zettel -->
+  <rect class="box" x="90" y="160" width="290" height="150" rx="6"/>
+  <text class="l" x="110" y="192">die Schublade</text>
+  <text class="mono" x="110" y="222">private List&lt;String&gt; artikel</text>
+  <g transform="rotate(-3 230 270)">
+    <rect class="zettel" x="130" y="240" width="200" height="52"/>
+    <text class="mono" x="146" y="273">Zettel: Liste @a1</text>
+  </g>
+
+  <!-- Die Liste -->
+  <rect class="box" x="330" y="390" width="270" height="80" rx="8"/>
+  <text class="l" x="352" y="424" style="font-weight:700">die Liste @a1</text>
+  <text class="mono" x="352" y="454">["Brot", "Milch"]</text>
+
+  <!-- Zettel zeigt auf Liste -->
+  <path class="ref" d="M 250 296 C 290 350, 330 380, 400 388"/>
+
+  <!-- Herausreichen -->
+  <path class="raus" d="M 340 260 C 520 210, 640 200, 790 226"/>
+  <text class="l" x="430" y="180">getArtikel() reicht eine Kopie des Zettels heraus</text>
+
+  <!-- Aufrufer -->
+  <rect class="box" x="770" y="110" width="380 " height="220" rx="8"/>
+  <text class="h" x="790" y="150">der Aufrufer, draußen</text>
+  <g transform="rotate(2 970 260)">
+    <rect class="kopie" x="810" y="220" width="220" height="52"/>
+    <text class="mono" x="826" y="253">Zettel: Liste @a1</text>
+  </g>
+  <text class="s" x="810" y="306">dieselbe Adresse – dasselbe Objekt</text>
+
+  <!-- Angriff -->
+  <path class="angriff" d="M 900 280 C 880 400, 750 450, 610 440"/>
+  <text class="gold" x="760" y="420">k.getArtikel().clear() – am Tresen vorbei</text>
+
+  <text class="s" x="70" y="540">Der Zettel liegt sicher in der Schublade. Die Kopie des Zettels findet den Herd trotzdem.</text>
+</svg>

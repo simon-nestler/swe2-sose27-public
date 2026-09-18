@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 620" role="img" aria-labelledby="ab-t ab-d">
+  <title id="ab-t">Aufrufbaum für zaehle(bilder): ein Aufruf ruft mehrere – der Stapel ist trotzdem nie tiefer als drei</title>
+  <desc id="ab-d">Ein Baum aus vier Aufrufkästen. Wurzel: zaehle(bilder) mit n gleich 2 plus 3 plus 5 gleich 10. Darunter zwei Kinder: zaehle von Ordner 3 gibt 3 zurück, zaehle von Ordner 1 mit n gleich 1 plus 4 gleich 5. Unter letzterem ein Kind: zaehle von Ordner 4 gibt 4 zurück. Blaue Pfeile abwärts sind mit Aufruf beschriftet, goldene Pfeile aufwärts mit dem Rückgabewert. Am linken Rand stehen die Tiefen 1 bis 3.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .ab-h { font-size: 24px; font-weight: 700; }
+    .ab-l { font-size: 20px; }
+    .ab-s { font-size: 18px; fill: #5a6472; }
+    .ab-g { font-size: 20px; font-weight: 700; fill: #8a5f00; }
+    .ab-b { font-size: 18px; fill: #1a2f6e; }
+    .ab-node { fill: #e5effb; stroke: #1a2f6e; stroke-width: 2.5; }
+  </style>
+  <defs>
+    <marker id="ab-call" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1a2f6e"/></marker>
+    <marker id="ab-ret" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#8a5f00"/></marker>
+  </defs>
+  <rect width="1260" height="620" fill="#ffffff"/>
+
+  <!-- Tiefenskala -->
+  <text class="ab-s" x="50" y="145">Tiefe 1</text>
+  <line x1="130" y1="138" x2="1210" y2="138" stroke="#c7cdd4" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <text class="ab-s" x="50" y="345">Tiefe 2</text>
+  <line x1="130" y1="338" x2="1210" y2="338" stroke="#c7cdd4" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <text class="ab-s" x="50" y="535">Tiefe 3</text>
+  <line x1="130" y1="528" x2="1210" y2="528" stroke="#c7cdd4" stroke-width="1.5" stroke-dasharray="4 6"/>
+
+  <!-- Ergebnis der Wurzel -->
+  <line x1="640" y1="88" x2="640" y2="38" stroke="#8a5f00" stroke-width="3.5" marker-end="url(#ab-ret)"/>
+  <text class="ab-g" x="660" y="60">10</text>
+
+  <!-- Wurzel -->
+  <rect class="ab-node" x="460" y="88" width="360" height="96" rx="10"/>
+  <text class="ab-h" x="490" y="126">zaehle(bilder)</text>
+  <text class="ab-l" x="490" y="162">n = 2 + 3 + 5 = 10</text>
+
+  <!-- Kind 1: Ordner 3 -->
+  <rect class="ab-node" x="180" y="290" width="320" height="92" rx="10"/>
+  <text class="ab-h" x="210" y="328">zaehle(Ordner 3)</text>
+  <text class="ab-l" x="210" y="362">kein Kind – n = 3</text>
+  <line x1="500" y1="140" x2="368" y2="282" stroke="#1a2f6e" stroke-width="3.5" marker-end="url(#ab-call)"/>
+  <text class="ab-b" x="360" y="212">Aufruf</text>
+  <line x1="416" y1="286" x2="548" y2="150" stroke="#8a5f00" stroke-width="3.5" marker-end="url(#ab-ret)"/>
+  <text class="ab-g" x="500" y="232">3</text>
+
+  <!-- Kind 2: Ordner 1 -->
+  <rect class="ab-node" x="700" y="290" width="330" height="92" rx="10"/>
+  <text class="ab-h" x="730" y="328">zaehle(Ordner 1)</text>
+  <text class="ab-l" x="730" y="362">n = 1 + 4 = 5</text>
+  <line x1="790" y1="188" x2="838" y2="282" stroke="#1a2f6e" stroke-width="3.5" marker-end="url(#ab-call)"/>
+  <text class="ab-b" x="746" y="240">Aufruf</text>
+  <line x1="898" y1="286" x2="850" y2="192" stroke="#8a5f00" stroke-width="3.5" marker-end="url(#ab-ret)"/>
+  <text class="ab-g" x="906" y="240">5</text>
+
+  <!-- Enkel: Ordner 4 -->
+  <rect class="ab-node" x="740" y="480" width="330" height="92" rx="10"/>
+  <text class="ab-h" x="770" y="518">zaehle(Ordner 4)</text>
+  <text class="ab-l" x="770" y="552">kein Kind – n = 4</text>
+  <line x1="850" y1="386" x2="880" y2="472" stroke="#1a2f6e" stroke-width="3.5" marker-end="url(#ab-call)"/>
+  <text class="ab-b" x="806" y="434">Aufruf</text>
+  <line x1="938" y1="476" x2="908" y2="390" stroke="#8a5f00" stroke-width="3.5" marker-end="url(#ab-ret)"/>
+  <text class="ab-g" x="946" y="434">4</text>
+
+  <text class="ab-s" x="180" y="596">bilder = new Ordner(2, new Ordner(3), new Ordner(1, new Ordner(4)))  ·  Ausgabe: 10</text>
+</svg>

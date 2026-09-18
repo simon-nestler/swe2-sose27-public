@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <title>Der Szenengraf als Baum: links das Fenster mit VBox, Label und Button, rechts dieselbe Struktur als Baumzeichnung wie in T08</title>
+
+  <!-- Linke Hälfte: das Fenster -->
+  <text x="300" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#031121">die Oberfläche</text>
+
+  <rect x="120" y="90" width="360" height="300" rx="10" fill="#E5EFFB" stroke="#031121" stroke-width="2"/>
+  <text x="140" y="122" font-size="18" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#5A6472">VBox</text>
+
+  <rect x="160" y="150" width="280" height="80" rx="8" fill="#FFFFFF" stroke="#C7CDD4" stroke-width="2"/>
+  <text x="180" y="180" font-size="17" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#5A6472">Label</text>
+  <text x="300" y="212" text-anchor="middle" font-size="19" fill="#031121">0 Medien</text>
+
+  <rect x="160" y="260" width="280" height="80" rx="8" fill="#FFFFFF" stroke="#C7CDD4" stroke-width="2"/>
+  <text x="180" y="290" font-size="17" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#5A6472">Button</text>
+  <text x="300" y="322" text-anchor="middle" font-size="19" fill="#031121">Hinzufügen</text>
+
+  <text x="300" y="440" text-anchor="middle" font-size="18" fill="#5A6472">jedes Widget ist ein Knoten</text>
+
+  <!-- Trennlinie -->
+  <line x1="600" y1="60" x2="600" y2="440" stroke="#C7CDD4" stroke-width="2"/>
+
+  <!-- Rechte Hälfte: der Baum -->
+  <text x="900" y="56" text-anchor="middle" font-size="22" font-weight="700" fill="#031121">derselbe Baum – wie in T08</text>
+
+  <rect x="830" y="90" width="140" height="52" rx="26" fill="none" stroke="#C7CDD4" stroke-width="2" stroke-dasharray="6 5"/>
+  <text x="900" y="123" text-anchor="middle" font-size="19" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#5A6472">Scene</text>
+
+  <line x1="900" y1="142" x2="900" y2="188" stroke="#5A6472" stroke-width="2"/>
+
+  <rect x="830" y="190" width="140" height="56" rx="28" fill="#E5EFFB" stroke="#031121" stroke-width="2.5"/>
+  <text x="900" y="225" text-anchor="middle" font-size="20" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#031121">VBox</text>
+  <text x="1010" y="222" font-size="16" fill="#5A6472">Wurzel</text>
+
+  <line x1="866" y1="246" x2="792" y2="308" stroke="#5A6472" stroke-width="2"/>
+  <line x1="934" y1="246" x2="1008" y2="308" stroke="#5A6472" stroke-width="2"/>
+
+  <rect x="710" y="310" width="150" height="56" rx="28" fill="#FFFFFF" stroke="#031121" stroke-width="2"/>
+  <text x="785" y="345" text-anchor="middle" font-size="20" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#031121">Label</text>
+
+  <rect x="940" y="310" width="150" height="56" rx="28" fill="#FFFFFF" stroke="#031121" stroke-width="2"/>
+  <text x="1015" y="345" text-anchor="middle" font-size="20" font-family="ui-monospace, 'SF Mono', Menlo, monospace" fill="#031121">Button</text>
+
+  <text x="900" y="440" text-anchor="middle" font-size="18" fill="#5A6472">jeder Knoten hat genau einen Elternknoten</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="t d">
+  <title id="t">Die Treppe der Wartekommunikation: sechs Stufen von nichts über Cursor, Spinner, Fortschritt mit Restzeit und Skelett-Ansicht bis zum optimistischen UI</title>
+  <desc id="d">Sechs Stufen von links unten nach rechts oben: nichts, Cursor, Spinner, Fortschritt mit Restzeit, Skelett-Ansicht, optimistisches UI (gelb hervorgehoben). Über jeder Stufe steht ihr Versprechen an den Menschen: etwas passiert, ich lebe, so lange noch, so wird es aussehen, schon fertig. Jede Stufe verspricht mehr und kostet die Entwicklung mehr – höher ist nicht besser.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .stufe { font-size: 21px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+    .stufe-dunkel { font-size: 21px; font-weight: 700; fill: #031121; text-anchor: middle; }
+    .verspricht { font-size: 19px; fill: #5a6472; text-anchor: middle; }
+    .anno { font-size: 20px; fill: #5a6472; }
+  </style>
+  <rect width="1200" height="620" fill="#ffffff"/>
+
+  <!-- Stufen -->
+  <rect x="48" y="488" width="176" height="72" fill="#1a2f6e"/>
+  <text class="stufe" x="136" y="527">nichts</text>
+  <text class="verspricht" x="136" y="472">–</text>
+
+  <rect x="232" y="416" width="176" height="144" fill="#1a2f6e"/>
+  <text class="stufe" x="320" y="455">Cursor</text>
+  <text class="verspricht" x="320" y="400">„etwas passiert"</text>
+
+  <rect x="416" y="344" width="176" height="216" fill="#1a2f6e"/>
+  <text class="stufe" x="504" y="383">Spinner</text>
+  <text class="verspricht" x="504" y="328">„ich lebe"</text>
+
+  <rect x="600" y="272" width="176" height="288" fill="#1a2f6e"/>
+  <text class="stufe" x="688" y="311">Fortschritt</text>
+  <text class="stufe" x="688" y="337">mit Restzeit</text>
+  <text class="verspricht" x="688" y="256">„so lange noch"</text>
+
+  <rect x="784" y="200" width="176" height="360" fill="#1a2f6e"/>
+  <text class="stufe" x="872" y="239">Skelett-</text>
+  <text class="stufe" x="872" y="265">Ansicht</text>
+  <text class="verspricht" x="872" y="184">„so wird es aussehen"</text>
+
+  <rect x="968" y="128" width="176" height="432" fill="#fcd430"/>
+  <text class="stufe-dunkel" x="1056" y="167">optimistisches</text>
+  <text class="stufe-dunkel" x="1056" y="193">UI</text>
+  <text class="verspricht" x="1056" y="112">„schon fertig"</text>
+
+  <!-- Grundlinie und Lesart -->
+  <line x1="48" y1="560" x2="1144" y2="560" stroke="#c7cdd4" stroke-width="2"/>
+  <text class="anno" x="48" y="598">jede Stufe: ein Versprechen an den Menschen, ein Preis für die Entwicklung – höher ist nicht besser</text>
+</svg>

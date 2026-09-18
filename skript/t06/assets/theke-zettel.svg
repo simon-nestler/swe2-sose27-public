@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="t d">
+  <title id="t">Die Theke aus T02 und T05: Aus der Küche kommt statt des Tellers ein Zettel mit der Aufschrift Zutat fehlt</title>
+  <desc id="d">Drei Zonen: links die Küche, in der Mitte die Theke als Übergabestelle, rechts der Gast. Der Teller in der Küche ist durchgestrichen. Über die Theke wandert ein gelber Zettel mit der Aufschrift Zutat fehlt in Richtung Gast. Der Zettel ist mit dem Wort Exception beschriftet.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 24px; font-weight: 700; }
+    .s { font-size: 18px; fill: #5a6472; }
+    .z { font-size: 21px; font-weight: 700; }
+    .zone { fill: #e5effb; stroke: #c7cdd4; stroke-width: 2; }
+    .theke { fill: #1a2f6e; }
+    .zettel { fill: #fcd430; stroke: #031121; stroke-width: 2; }
+    .weg { fill: none; stroke: #3391ff; stroke-width: 4; stroke-dasharray: 9 7; marker-end: url(#pfeil); }
+    .kreuz { stroke: #5a6472; stroke-width: 4; }
+  </style>
+  <defs>
+    <marker id="pfeil" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3391ff"/></marker>
+  </defs>
+  <rect width="1200" height="520" fill="#ffffff"/>
+
+  <!-- Küche -->
+  <rect class="zone" x="60" y="120" width="360" height="300"/>
+  <text class="h" x="90" y="170">Küche</text>
+  <text class="s" x="90" y="200">die Implementierung</text>
+  <!-- durchgestrichener Teller -->
+  <circle cx="240" cy="320" r="58" fill="#ffffff" stroke="#5a6472" stroke-width="4"/>
+  <circle cx="240" cy="320" r="34" fill="none" stroke="#c7cdd4" stroke-width="3"/>
+  <line class="kreuz" x1="196" y1="276" x2="284" y2="364"/>
+  <text class="s" x="150" y="412">das Gericht kommt nicht</text>
+
+  <!-- Theke -->
+  <rect class="theke" x="560" y="120" width="26" height="300"/>
+  <text class="h" x="536" y="90">Theke</text>
+  <text class="s" x="490" y="452">die Schnittstelle</text>
+
+  <!-- Gast -->
+  <rect class="zone" x="760" y="120" width="360" height="300"/>
+  <text class="h" x="790" y="170">Gast</text>
+  <text class="s" x="790" y="200">der Aufrufer</text>
+  <circle cx="960" cy="290" r="30" fill="#ffffff" stroke="#031121" stroke-width="3"/>
+  <path d="M910,388 C910,340 1010,340 1010,388" fill="#ffffff" stroke="#031121" stroke-width="3"/>
+
+  <!-- Zettel über die Theke -->
+  <path class="weg" d="M330,270 C440,220 620,220 740,260"/>
+  <g transform="rotate(-7 520 210)">
+    <rect class="zettel" x="440" y="176" width="170" height="70" rx="4"/>
+    <text class="z" x="462" y="220">Zutat fehlt</text>
+  </g>
+  <text class="s" x="470" y="150">die Exception – die Rückgabe, wenn das Gericht nicht kommt</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="t d">
+  <title id="t">Die Theke aus T02, dritte Drehung: links hängt die Karte ohne Küche, rechts bedienen zwei Küchen dieselbe Karte</title>
+  <desc id="d">Linkes Feld: Eine hängende Karte mit der Aufschrift abspielen(), dahinter eine gestrichelte leere Fläche mit der Beschriftung keine Küche. Rechtes Feld: Dieselbe Karte, darunter zwei Küchenkästen Küche Video und Küche Audio, deren Pfeile auf die Karte zeigen.</desc>
+  <style>
+    text { font-family: Inter, "Neue Haas Unica", Helvetica, Arial, sans-serif; fill: #031121; }
+    .h { font-size: 26px; font-weight: 700; }
+    .cap { font-size: 22px; fill: #5a6472; }
+    .karte-name { font-size: 24px; font-weight: 700; text-anchor: middle; }
+    .karte-eintrag { font-size: 23px; text-anchor: middle; }
+    .schild { fill: #ffffff; stroke: #031121; stroke-width: 3; }
+    .kopf { fill: #fcd430; }
+    .kueche { fill: #ffffff; stroke: #1a2f6e; stroke-width: 3; }
+    .leer { fill: none; stroke: #5a6472; stroke-width: 2; stroke-dasharray: 8 6; }
+    .seil { stroke: #031121; stroke-width: 2; }
+    .pfeil { stroke: #1a2f6e; stroke-width: 3; fill: none; }
+    .spitze { fill: #1a2f6e; }
+    .trenner { stroke: #c7cdd4; stroke-width: 2; }
+  </style>
+  <rect width="1200" height="560" fill="#ffffff"/>
+  <line class="trenner" x1="600" y1="40" x2="600" y2="520"/>
+
+  <!-- Links: die Karte hängt allein -->
+  <g>
+    <text class="h" x="80" y="60">Die Karte hängt allein</text>
+    <line class="seil" x1="200" y1="90" x2="230" y2="130"/>
+    <line class="seil" x1="360" y1="90" x2="330" y2="130"/>
+    <rect class="schild" x="150" y="130" width="260" height="120"/>
+    <rect class="kopf" x="150" y="130" width="260" height="42"/>
+    <text class="karte-name" x="280" y="160">Karte</text>
+    <text class="karte-eintrag" x="280" y="222">abspielen()</text>
+    <rect class="leer" x="120" y="320" width="380" height="150"/>
+    <text class="cap" x="235" y="402">keine Küche</text>
+  </g>
+
+  <!-- Rechts: zwei Küchen, dieselbe Karte -->
+  <g>
+    <text class="h" x="680" y="60">Zwei Küchen, dieselbe Karte</text>
+    <line class="seil" x1="800" y1="90" x2="830" y2="130"/>
+    <line class="seil" x1="960" y1="90" x2="930" y2="130"/>
+    <rect class="schild" x="750" y="130" width="260" height="120"/>
+    <rect class="kopf" x="750" y="130" width="260" height="42"/>
+    <text class="karte-name" x="880" y="160">Karte</text>
+    <text class="karte-eintrag" x="880" y="222">abspielen()</text>
+
+    <rect class="kueche" x="650" y="380" width="220" height="90"/>
+    <text class="karte-eintrag" x="760" y="432">Küche Video</text>
+    <rect class="kueche" x="920" y="380" width="220" height="90"/>
+    <text class="karte-eintrag" x="1030" y="432">Küche Audio</text>
+
+    <path class="pfeil" d="M 760 380 L 820 268"/>
+    <polygon class="spitze" points="820,268 800,290 823,286"/>
+    <path class="pfeil" d="M 1030 380 L 950 268"/>
+    <polygon class="spitze" points="950,268 950,297 970,285"/>
+  </g>
+
+  <text class="cap" x="80" y="520">Der Gast bestellt nach Karte, nicht nach Küche.</text>
+</svg>
