@@ -21,18 +21,18 @@ Videos sind nicht enthalten; an ihrer Stelle steht im Skript ein Link auf die Or
 - [T12 · Anker 2: Audit-Werkstatt](skript/t12/)
 - [T13 · Der große Entwurf](skript/t13/)
 
-## Übungs- und Praktikumsblätter
+## Praktikumsblätter
 
-- [01-freiraum-klassen-git](blaetter/01-freiraum-klassen-git.pdf)
-- [02-raumtypen](blaetter/02-raumtypen.pdf)
-- [03-warteliste-kalender](blaetter/03-warteliste-kalender.pdf)
-- [04-sammlungen-dateien](blaetter/04-sammlungen-dateien.pdf)
-- [05-oberflaeche](blaetter/05-oberflaeche.pdf)
-- [06-import-nebenlaeufig](blaetter/06-import-nebenlaeufig.pdf)
+- [Praktikumsblatt 1 · Zeitfenster, Raum, Buchung](blaetter/01-freiraum-klassen-git.pdf)
+- [Praktikumsblatt 2 · Raumtypen und Buchungsterminal](blaetter/02-raumtypen.pdf)
+- [Praktikumsblatt 3 · Warteliste und Belegungskalender](blaetter/03-warteliste-kalender.pdf)
+- [Praktikumsblatt 4 · Sammlungen, Dateien, Rangliste](blaetter/04-sammlungen-dateien.pdf)
+- [Praktikumsblatt 5 · Oberfläche](blaetter/05-oberflaeche.pdf)
+- [Praktikumsblatt 6 · Import ohne Einfrieren](blaetter/06-import-nebenlaeufig.pdf)
 
 ## Probeklausur
 
-- [klausur](probeklausur/klausur.pdf)
+- [Probeklausur](probeklausur/klausur.pdf)
 
 ## Lern-Skills
 
